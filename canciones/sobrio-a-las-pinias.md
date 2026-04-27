@@ -36,6 +36,9 @@
 
 ## Grooves
 
+- https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-drums-drum-tab-s928213
+![alt text](<tab-sobrio-a-las-pinias.png>)
+
 ### Groove base
 ```
 HH: x . x . x . x .
