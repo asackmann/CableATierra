@@ -45,3 +45,11 @@
 
 - Final con foco en dinámica, no en velocidad.
 - Menos es más: cada intervención tiene que sumar.
+
+---
+
+## Referencias
+
+- 🎵 Divididos — Sobrio a las Piñas
+- 🥁 Buscar versiones en vivo de Divididos (Smirnoff, acústicos, etc)
+- 📝 **Transcripción:** Clave: cómo transiciona de ~92 a 118 vivo. Escuchar estructura de cortes y silencios. Cada golpe de bombo cuenta. Apuntar exactitud del acelerón final.

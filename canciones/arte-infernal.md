@@ -4,7 +4,7 @@
 
 | Campo        | Valor         |
 |--------------|---------------|
-| **BPM**      | ~95           |
+| **BPM**      | ~135           |
 | **Tonalidad**| Por definir   |
 | **Compás**   | 4/4           |
 | **Duración** | ~4:30         |
@@ -17,12 +17,12 @@
 
 | # | Parte      | Compases | BPM | Groove               | Notas                            |
 |---|------------|----------|-----|----------------------|----------------------------------|
-| 1 | Intro      | 8        | 95  | rock pesado          | Sonido grande                    |
-| 2 | Verso A    | 16       | 95  | groove denso         | Sostener tempo                   |
-| 3 | Estribillo | 8        | 95  | rock pesado abierto  | No apurarse                      |
-| 4 | Verso B    | 16       | 95  | groove denso         | Mantener peso                    |
-| 5 | Puente     | 8        | 95  | medio tiempo pesado  | Preparar subida                  |
-| 6 | Final      | 16       | 95  | rock pesado          | Cierre firme                     |
+| 1 | Intro      | 8        | 135  | rock pesado          | Sonido grande                    |
+| 2 | Verso A    | 16       | 135  | groove denso         | Sostener tempo                   |
+| 3 | Estribillo | 8        | 135  | rock pesado abierto  | No apurarse                      |
+| 4 | Verso B    | 16       | 135  | groove denso         | Mantener peso                    |
+| 5 | Puente     | 8        | 135  | medio tiempo pesado  | Preparar subida                  |
+| 6 | Final      | 16       | 135  | rock pesado          | Cierre firme                     |
 
 ---
 
@@ -45,3 +45,11 @@
 
 - Tema bisagra entre power y sprint final.
 - El control del pulso es clave para que no se desarme.
+
+---
+
+## Referencias
+
+- 🎵 La Renga — Arte Infernal
+- 🥁 Buscar videos en vivo de La Renga para captar la dinámica pesada
+- 📝 **Transcripción:** Grabación debe captar el groove denso. Tempo ~95 muy importante. Escuchar cómo el bombista sostiene sin acelerar en secciones repetidas.

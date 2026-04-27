@@ -45,3 +45,11 @@
 
 - Evitar rigidez: mantener rebote natural del shuffle.
 - Controlar el tempo cuando sube la energía de la banda.
+
+---
+
+## Referencias
+
+- 🎵 [Stevie Ray Vaughan — Pride and Joy](https://www.youtube.com/results?search_query=Stevie+Ray+Vaughan+Pride+and+Joy)
+- 🥁 [Drum playthrough Pride and Joy](https://www.youtube.com/results?search_query=Pride+and+Joy+drum+tutorial+shuffle)
+- 📝 **Transcripción:** El shuffle es todo. Escuchar al batería original (Chris Layton) — nota la energía sin acelerar. Apuntar duración exacta de solos y cómo cierra.

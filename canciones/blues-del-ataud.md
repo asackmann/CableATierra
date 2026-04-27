@@ -45,3 +45,11 @@
 
 - Tema para bajar y asentar groove.
 - Sonido relajado, sin empujar tiempos fuertes.
+
+---
+
+## Referencias
+
+- 🎵 Justo Alegre — Blues del Ataúd
+- 🥁 Buscar covers locales o versiones de Justo Alegre en YouTube
+- 📝 **Transcripción:** Focalizarse en el shuffle y el swing. Grabar el tempo exacto (~72). Las dinámicas de solos son la guía del baterista.

@@ -45,3 +45,11 @@
 
 - El feel manda sobre la exactitud quirúrgica.
 - Apoyar la canción desde atrás.
+
+---
+
+## Referencias
+
+- 🎵 [The Rolling Stones — Honky Tonk Women (original)](https://www.youtube.com/results?search_query=Rolling+Stones+Honky+Tonk+Women)
+- 🥁 [Drum tutorial / cover Honky Tonk Women](https://www.youtube.com/results?search_query=Honky+Tonk+Women+drum+tutorial)
+- 📝 **Transcripción:** Escuchar la caja: sigue el ritmo de guitarra. El hi-hat determina el feel laid back. Identificar fills exactos de cada sección.

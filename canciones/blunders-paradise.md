@@ -45,3 +45,11 @@
 
 - Tema de estabilidad en mitad del set.
 - Funciona mejor con dinámica media constante.
+
+---
+
+## Referencias
+
+- 🎵 Justo Alegre — Blunders Paradise (~77 BPM)
+- 🥁 Buscar en Spotify/YouTube versión de Justo Alegre
+- 📝 **Transcripción:** Tempo lento (~77) es crítico. Grabarse con metrónomo a 77 BPM. Notar cómo responde la guitarra al puente para timing de fills.

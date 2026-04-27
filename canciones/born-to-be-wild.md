@@ -45,3 +45,11 @@
 
 - Último pico de energía antes del cierre del set.
 - La precisión del tempo define todo el tema.
+
+---
+
+## Referencias
+
+- 🎵 [Steppenwolf — Born to be Wild](https://www.youtube.com/results?search_query=Steppenwolf+Born+to+be+Wild)
+- 🥁 [Drum playthrough Born to be Wild](https://www.youtube.com/results?search_query=Born+to+be+Wild+drums+tutorial)
+- 📝 **Transcripción:** Tempo ~146 constante. Escuchar al bombista: manos veloces pero controladas, no acelera. Apuntar timing exacto de kick y snare por compás.

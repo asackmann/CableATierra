@@ -6,14 +6,14 @@ Setlist oficial para ensayos y show. Orden, curva y claves ya definidas.
 
 | # | Canción | Artista Original | BPM | Clave | Estado |
 |---|---------|------------------|-----|-------|--------|
-| 1 | [Alta Suciedad -> Los Chicos](canciones/alta-suciedad-los-chicos.md) | Calamaro | 124 -> 116 | transición directa, bajar energía sin cortar | 🟢 lista |
+| 1 | [Alta Suciedad -> Los Chicos](canciones/alta-suciedad-los-chicos.md) | Calamaro | 106 -> 135 | transición directa, bajar energía sin cortar | 🟢 lista |
 | 2 | [Blues del Ataúd](canciones/blues-del-ataud.md) | Justo Alegre | ~72 (shuffle) | feel > precisión | 🟢 lista |
 | 3 | [Honky Tonk Women](canciones/honky-tonk-women.md) | The Rolling Stones | ~120 | laid back | 🟢 lista |
-| 4 | [Nadie es Perfecto](canciones/nadie-es-perfecto.md) | Patricio Rey y sus Redonditos de Ricota | ~110 | groove sucio | 🟢 lista |
+| 4 | [Nadie es Perfecto](canciones/nadie-es-perfecto.md) | Patricio Rey y sus Redonditos de Ricota | ~162 | groove sucio | 🟢 lista |
 | 5 | [Pride and Joy](canciones/pride-and-joy.md) | Stevie Ray Vaughan | ~120 (shuffle) | tema clave | 🟢 lista |
 | 6 | [Blunders Paradise](canciones/blunders-paradise.md) | Justo Alegre | ~77 | moderato | 🟢 lista |
-| 7 | [You Really Got Me](canciones/you-really-got-me.md) | Bon Jovi | ~132 | power | 🟢 lista |
-| 8 | [Arte Infernal](canciones/arte-infernal.md) | La Renga | ~95 | no caerse | 🟢 lista |
+| 7 | [You Really Got Me](canciones/you-really-got-me.md) | Bon Jovi | ~110 | power | 🟢 lista |
+| 8 | [Arte Infernal](canciones/arte-infernal.md) | La Renga | ~135 | no caerse | 🟢 lista |
 | 9 | [Born To Be Wild](canciones/born-to-be-wild.md) | Steppenwolf | ~146 | no acelerar | 🟢 lista |
 |10 | [Sobrio a las Piñas](canciones/sobrio-a-las-pinias.md) | Divididos | ~116 | dinámica / cortes | 🟢 lista |
 
