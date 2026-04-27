@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Rock pesado base
+```
+HH: x . x . x . x .
+SD:     o       o
+BD: o       o o
+```
+> Groove grande, con bombo firme y sin apurarse. Todo el peso está en la constancia.
+
+### Medio tiempo del puente
+```
+HH: x . x . x . x .
+SD:     o       o
+BD: o       o o
+```
+> Abrir espacio en el medio tiempo para que el riff respire y la banda no se adelante.
+
+---
+
 ## Fills destacados
 
 - Fills pesados, principalmente toms + bombo.
@@ -52,4 +72,4 @@
 
 - 🎵 La Renga — Arte Infernal
 - 🥁 Buscar videos en vivo de La Renga para captar la dinámica pesada
-- 📝 **Transcripción:** Grabación debe captar el groove denso. Tempo ~95 muy importante. Escuchar cómo el bombista sostiene sin acelerar en secciones repetidas.
+- 📝 **Transcripción:** Grabación debe captar el groove denso. Tempo ~135 muy importante. Escuchar cómo el bombista sostiene sin acelerar en secciones repetidas.

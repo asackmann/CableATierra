@@ -1,68 +1,64 @@
 # Análisis Deep Research del Repo y de Cada Track
 
-Fecha del análisis: 2026-04-26
+Fecha del análisis ajustado: 2026-04-26
 
 ## Resumen ejecutivo
 
-El repo está bien orientado como cuaderno de trabajo para batería, pero al contrastarlo con fuentes externas aparecen varios problemas de precisión:
+Revisé nuevamente el repo después de tus cambios. El análisis anterior quedó desactualizado en varios puntos y ahora la situación cambió bastante:
 
-- Hay al menos un error claro de atribución: `You Really Got Me` figura como tema de Bon Jovi, pero el original es de **The Kinks**.
-- Hay inconsistencias internas de BPM en varios archivos: `Alta Suciedad -> Los Chicos`, `Arte Infernal` y `Sobrio a las Piñas`.
-- `La Rubia` existe como archivo pero no está en `tracklist.md`; además, por letra, créditos y BPM, parece corresponder a **La Rubia Tarada** y no a un tema original llamado solo `La Rubia`.
-- En los temas de `Justo Alegre` no encontré presencia pública sólida ni tablaturas de batería confiables; hoy dependen casi por completo de transcripción propia.
-- En general, el repo mezcla links de búsqueda genéricos con notas internas. Conviene pasar a referencias estables por track.
+- `You Really Got Me` ya no aparece como tema mal atribuido: ahora el repo usa `You Really Got Me Now`, que sí corresponde a **Jon Bon Jovi / Bon Jovi**.
+- `Alta Suciedad -> Los Chicos` quedó internamente consistente en el repo.
+- `La Rubia` ya no forma parte del estado actual del repo, así que esa observación deja de aplicar.
+- Los problemas que siguen realmente vigentes son pocos y concretos:
+  - una contradicción fuerte en `Arte Infernal`
+  - una posible diferencia entre la referencia externa y la versión de banda en `Sobrio a las Piñas`
+  - ausencia de material público confiable para los temas de `Justo Alegre`
 
-## Hallazgos globales del repo
+## Estado actual del repo
 
-### 1. Error de artista original
+### Ajustes que ya quedaron resueltos
 
-- `tracklist.md:15` y `canciones/you-really-got-me.md:1` atribuyen `You Really Got Me` a `Bon Jovi`.
-- La canción original es de **The Kinks** (single de 1964). Si la banda toca una versión influida por Bon Jovi, Van Halen u otra, conviene aclararlo como `versión de ... / original de The Kinks`.
+- `tracklist.md` y `canciones/you-really-got-me-now.md` ahora están alineados con `You Really Got Me Now`.
+- `canciones/alta-suciedad-los-chicos.md` ya no tiene las contradicciones internas de BPM que aparecían antes.
+- No encontré `canciones/la-rubia.md` en el estado actual del árbol, así que quité esa parte del análisis.
 
-### 2. Inconsistencias de BPM dentro de los mismos archivos
+### Problemas que siguen abiertos
 
-- `canciones/alta-suciedad-los-chicos.md:7` indica `106 -> 135`, pero en `:32` dice `Transición a 116` y en `:40` habla de `124 -> 116`.
-- `canciones/arte-infernal.md:7` y la estructura usan `135`, pero en `:55` la nota de transcripción dice `Tempo ~95 muy importante`.
-- `canciones/sobrio-a-las-pinias.md:7` dice `~92 / 118 vivo`, mientras toda la estructura en `:20-25` está armada a `116`.
-
-### 3. Canción huérfana / posible problema de naming
-
-- `canciones/la-rubia.md` existe, pero no aparece en `tracklist.md`.
-- Las letras y créditos públicos apuntan a **La Rubia Tarada**; además los BPM públicos rondan ~122-123, no 148.
-- Si ese archivo corresponde a la versión en vivo de Divididos del tema de Sumo, conviene renombrarlo y ajustar artista original / versión.
-
-### 4. Calidad desigual de referencias
-
-- Algunos tracks tienen solo links a búsquedas de YouTube.
-- Otros ya tienen tablaturas concretas disponibles en Songsterr.
-- Para ensayo conviene priorizar: tema oficial + tab de batería + una versión en vivo de referencia.
+- `canciones/arte-infernal.md` sigue mezclando un track a `135 BPM` con una nota final que habla de `~95`.
+- `canciones/sobrio-a-las-pinias.md` ahora es consistente a `120`, pero externamente las referencias más claras siguen marcando `116 BPM` para estudio y `125 BPM` para vivo. No lo llamaría error directo, pero sí una decisión que conviene documentar mejor.
+- `Blues del Ataúd` y `Blunders Paradise` siguen sin validación pública sólida ni tabs de batería confiables.
 
 ## Evaluación por track
 
 | Track | Validación externa | Evaluación del archivo actual | Tablatura de batería |
 |---|---|---|---|
-| Alta Suciedad -> Los Chicos | `Alta suciedad` aparece pública a **106-107 BPM** y `Los chicos` a **135 BPM** | BPM general bien orientado, pero el archivo tiene contradicciones internas (`106 -> 135` vs `116` y `124 -> 116`) | Sí: `Alta suciedad Drum Tab` en Songsterr. No encontré una tab clara del medley completo |
-| Blues del Ataúd | No encontré presencia pública sólida del track ni metadata confiable | El archivo sirve como nota interna, pero hoy no pude validar BPM, duración ni estructura contra fuentes externas | No encontré tab pública confiable |
+| Alta Suciedad -> Los Chicos | `Alta suciedad` aparece pública a **106-107 BPM** y `Los chicos` a **135 BPM** | Ahora está consistente y bien alineado con la idea del medley | Sí: `Alta suciedad Drum Tab` en Songsterr. No encontré una tab clara del medley completo |
+| Blues del Ataúd | No encontré presencia pública sólida del track ni metadata confiable | Sigue siendo material útil como nota interna, pero no validable externamente hoy | No encontré tab pública confiable |
 | Honky Tonk Women | Coincide con el original de The Rolling Stones; BPM repo (~120) razonable | Archivo consistente. Buen enfoque de feel laid back | Sí: Songsterr tiene tabs concretas para batería |
-| Nadie es Perfecto | Coincide con el tema oficial; encontré referencia pública a ~159 BPM | Repo marca `~162`; está cerca y es utilizable, aunque quizá convenga normalizarlo a 159-160 | Sí: Songsterr tiene tab de batería |
-| Pride and Joy | Coincide con el original; referencia pública encontrada a **127 BPM** | El repo lo pone en `~120`; no está lejísimos para shuffle de ensayo, pero queda subestimado | Sí: Songsterr tiene varias tabs de batería, incluida la versión principal |
-| Blunders Paradise | No encontré presencia pública sólida del track ni metadata confiable | El archivo hoy no se puede validar externamente; queda como transcripción interna | No encontré tab pública confiable |
-| You Really Got Me | Original confirmado de **The Kinks**; el repo lo atribuye mal | Error claro de artista original. Si la referencia real es otra versión, hay que explicitarla | Sí: Songsterr tiene tab de batería de The Kinks |
-| Arte Infernal | Coincide con el tema oficial de La Renga; referencia pública encontrada a **134 BPM** | El valor `135` está bien, pero la nota final que habla de `~95` se contradice y parece incorrecta | No encontré tab pública de batería confiable; sí hay tabs de guitarra y acordes |
+| Nadie es Perfecto | Coincide con el tema oficial; encontré referencia pública a ~159 BPM | `~162` sigue siendo razonable para ensayo | Sí: Songsterr tiene tab de batería |
+| Pride and Joy | Coincide con el original; referencia pública encontrada a **127 BPM** | El repo lo sigue poniendo en `~120`; no es grave, pero queda algo corto frente a la referencia | Sí: Songsterr tiene varias tabs de batería |
+| Blunders Paradise | No encontré presencia pública sólida del track ni metadata confiable | Sigue como transcripción interna no verificable externamente | No encontré tab pública confiable |
+| You Really Got Me Now | Coincide con el tema de **Jon Bon Jovi**; encontré referencias públicas a **110-111 BPM** | Cambio correcto. El repo ahora está bien encaminado en nombre, artista y BPM | No encontré una tab pública clara de batería específica para este tema exacto |
+| Arte Infernal | Coincide con el tema oficial de La Renga; referencia pública encontrada a **134 BPM** | El valor `135` está bien, pero la nota final que habla de `~95` sigue pareciendo incorrecta | No encontré tab pública de batería confiable; sí hay tabs de guitarra y acordes |
 | Born To Be Wild | Coincide con Steppenwolf; referencias públicas encontradas a **145-146 BPM** | Archivo consistente y bien calibrado | Sí: Songsterr tiene tab de batería |
-| Sobrio a las Piñas | Coincide con Divididos; referencias públicas a **116 BPM** estudio y **125 BPM** en vivo | El cuerpo del archivo está alineado a 116, pero el encabezado `~92 / 118 vivo` no coincide | Sí: Songsterr tiene tab de batería; además apareció una transcripción textual en Cifras |
-| La Rubia | Lo público apunta a **La Rubia Tarada**; Divididos la toca en vivo alrededor de **123 BPM** y el original de Sumo ronda **122 BPM** | El archivo parece mal nombrado o mal identificado. `148 BPM` no coincide con lo encontrado | Sí, pero con advertencia: hay tabs en Songsterr para `La Rubia Tarada`, varias marcadas como AI |
+| Sobrio a las Piñas | Coincide con Divididos; referencias públicas a **116 BPM** estudio y **125 BPM** en vivo | El repo ahora es consistente a `120`, que funciona como promedio/intermedio, pero convendría aclarar si es `versión banda` | Sí: Songsterr tiene tab de batería; además apareció una transcripción textual en Cifras |
 
 ## Detalle por track
 
 ### Alta Suciedad -> Los Chicos
 
-- Lo externo respalda bien la idea general del medley: `Alta suciedad` ~106/107 BPM y `Los chicos` 135 BPM.
-- El problema está en la coherencia interna del archivo:
+- Lo externo sigue respaldando bien la lógica del medley:
+  - `Alta suciedad` ~106/107 BPM
+  - `Los chicos` ~135 BPM
+- A diferencia de la revisión anterior, el archivo actual ya está coherente:
   - `canciones/alta-suciedad-los-chicos.md:7` dice `106 -> 135`
-  - `:32` dice `Transición a 116`
-  - `:40` dice `124 -> 116`
-- Recomendación: unificar todo a una sola lógica de tempo. Si el medley real en ensayo está modificado, anotar explícitamente `versión de banda`.
+  - `:23` mantiene `106 -> 135`
+  - `:32` dice `Transición a 135`
+  - `:40` dice `transición 106 -> 135`
+
+Conclusión:
+
+- Este punto ya no lo marcaría como error.
 
 Tab batería:
 
@@ -70,18 +66,18 @@ Tab batería:
 
 ### Blues del Ataúd
 
-- No encontré resultados públicos útiles que me permitan validar artista, BPM o tablatura.
-- Puede ser material propio, material muy local o una grabación no indexada.
+- No encontré resultados públicos útiles que permitan validar artista, BPM o tablatura.
+- Lo trataría como material de trabajo interno de la banda.
 
 Recomendación:
 
-- Si existe demo/drive/audio privado, este tema necesita una referencia interna propia más fuerte: BPM real, duración exacta, conteo de compases y un groove escrito.
+- Si existe audio propio, demo o grabación de ensayo, conviene referenciarlo dentro del repo.
 
 ### Honky Tonk Women
 
+- Sin cambios respecto al análisis anterior.
 - La identificación del track es correcta.
-- El BPM del repo (`~120`) es razonable para el feel del tema.
-- Es uno de los archivos más sanos del repo.
+- El BPM del repo (`~120`) sigue siendo razonable.
 
 Tabs batería:
 
@@ -90,9 +86,9 @@ Tabs batería:
 
 ### Nadie es Perfecto
 
-- El track y el artista están bien.
-- Encontré una referencia pública que lo sitúa cerca de **159 BPM**; el repo usa `~162`, que puede servir perfectamente en contexto de ensayo.
-- No encontré una inconsistencia grave dentro del archivo.
+- Sigue bien identificado.
+- La referencia pública encontrada lo ubica cerca de **159 BPM**.
+- `~162` no me parece un problema real.
 
 Tab batería:
 
@@ -100,9 +96,9 @@ Tab batería:
 
 ### Pride and Joy
 
-- El track está bien identificado.
-- La referencia pública encontrada lo sitúa en **127 BPM**, así que el `~120` del repo queda un poco corto.
-- Como es shuffle, la diferencia puede sentirse bastante.
+- Sigue siendo válido.
+- La referencia pública encontrada lo sitúa en **127 BPM**.
+- El repo sigue usando `~120`, así que lo dejaría marcado como diferencia menor, no como error duro.
 
 Tabs batería:
 
@@ -111,42 +107,47 @@ Tabs batería:
 
 ### Blunders Paradise
 
-- No encontré validación pública suficiente del tema ni tab de batería usable.
-- Hoy lo trataría como material no verificable externamente.
+- Igual que `Blues del Ataúd`, no encontré validación pública suficiente del tema ni tab de batería usable.
 
 Recomendación:
 
-- Igual que con `Blues del Ataúd`, conviene agregar una referencia interna más cerrada y quizás un audio base.
+- Mantenerlo como transcripción interna y, si existe, sumar una fuente privada o audio base.
 
-### You Really Got Me
+### You Really Got Me Now
 
-- Este es el error más claro del repo.
-- El original es **The Kinks**, no Bon Jovi.
-- Si la versión que están montando se parece más a otra interpretación, habría que escribirlo así:
-  - `Original: The Kinks`
-  - `Versión de referencia: ...`
+- Este punto cambió por completo respecto a la revisión anterior.
+- Ahora sí encontré coincidencia externa con el tema de **Jon Bon Jovi**:
+  - referencia pública a **111 BPM**
+  - otra referencia pública a **110 BPM**
+- El repo usa `~110`, así que quedó razonablemente bien.
 
-Tab batería:
+Observación menor:
 
-- Songsterr: [You Really Got Me Drum Tab](https://www.songsterr.com/a/wsa/kinks-you-really-got-me-drum-tab-s10803)
+- Las referencias dentro del archivo todavía usan búsquedas genéricas de `You Really Got Me`, no `You Really Got Me Now`.
+- No es un error musical, pero sí una referencia mejorable.
+
+Referencias externas:
+
+- SongBPM: [You Really Got Me Now](https://songbpm.com/%40jon-bon-jovi/you-really-got-me-now)
+- Shazam: [You Really Got Me Now](https://www.shazam.com/song/1440658020/you-really-got-me-now)
+- YouTube oficial: [You Really Got Me Now](https://www.youtube.com/watch?v=Fxhhbn9Mvs8)
 
 ### Arte Infernal
 
-- La identificación del tema y artista es correcta.
+- Sigue siendo el hallazgo más claro y vigente.
 - La referencia pública encontrada marca **134 BPM**, así que `135` está bien.
-- El error está en la nota final:
-  - `canciones/arte-infernal.md:55` dice `Tempo ~95 muy importante`
-- Esa línea contradice tanto el archivo como la referencia externa.
+- Pero el archivo todavía dice:
+  - `canciones/arte-infernal.md:55` `Tempo ~95 muy importante`
 
-Recomendación:
+Conclusión:
 
-- Corregir la nota final para que quede alineada con 134/135 BPM.
+- Esta línea sigue contradiciendo tanto el resto del archivo como la referencia externa.
+- Este sí sigue siendo un error real dentro del repo.
 
 ### Born To Be Wild
 
-- Muy bien calibrado.
-- Las referencias públicas encontradas lo ubican en **145-146 BPM**, clavado con el repo.
-- No vi errores relevantes.
+- Sin cambios: muy bien calibrado.
+- Las referencias públicas siguen ubicándolo en **145-146 BPM**, alineado con el repo.
 
 Tab batería:
 
@@ -154,11 +155,24 @@ Tab batería:
 
 ### Sobrio a las Piñas
 
-- La referencia pública del estudio encontrada marca **116 BPM**.
-- También apareció una referencia en vivo cerca de **125 BPM**.
-- Eso hace que el cuerpo del archivo esté razonablemente bien, pero el encabezado actual no:
-  - `canciones/sobrio-a-las-pinias.md:7` dice `~92 / 118 vivo`
-  - `:20-25` desarrolla todo el tema a `116`
+- El archivo ahora es internamente consistente:
+  - `tracklist.md:18` usa `~120`
+  - `canciones/sobrio-a-las-pinias.md:7` usa `120 vivo`
+  - `:20-25` desarrolla toda la estructura a `120`
+- Externamente, las mejores referencias que encontré siguen siendo:
+  - estudio: **116 BPM**
+  - vivo: **125 BPM**
+
+Conclusión:
+
+- Ya no lo marcaría como contradicción interna.
+- Lo marcaría como una decisión de versión:
+  - `120` funciona como punto medio práctico
+  - convendría explicitar que es tempo de la versión de banda o una referencia intermedia entre estudio y vivo
+
+Observación menor:
+
+- `canciones/sobrio-a-las-pinias.md:55` dice `cómo transiciona de 120`, y la frase quedó algo rara; parece que antes hablaba de un cambio más claro.
 
 Tabs batería:
 
@@ -166,39 +180,15 @@ Tabs batería:
 - Songsterr estudio: [Sobrio a las Piñas (Versión Estudio) Drum Tab](https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-version-estudio-drum-tab-s1811672)
 - Transcripción textual: [CIFRAS - Sobrio A Las Piñas](https://www.cifras.com.br/cifra/divididos/sobrio-a-las-pinas)
 
-### La Rubia
-
-- Este archivo necesita revisión fuerte.
-- Lo encontrado públicamente indica que el tema real es **La Rubia Tarada**:
-  - versión original de Sumo ~122 BPM
-  - versión en vivo de Divididos ~123 BPM
-- El repo lo pone en `148 BPM`, y el naming queda ambiguo.
-
-Recomendación:
-
-- Confirmar si el tema es:
-  - `La Rubia Tarada` de Sumo, versionada por Divididos
-  - o una variante/arreglo interno distinto
-- Si es la primera opción, conviene renombrar archivo y corregir BPM.
-
-Tabs batería:
-
-- Songsterr Divididos: [La Rubia Tarada Drum Tab](https://www.songsterr.com/a/wsa/divididos-la-rubia-tarada-drum-tab-s4343797)
-- Songsterr Sumo: [La Rubia Tarada Drum Tab](https://www.songsterr.com/a/wsa/sumo-la-rubia-tarada-drum-tab-s686665)
-
 ## Prioridad de correcciones sugerida
 
-1. Corregir artista original de `You Really Got Me`.
-2. Unificar BPM de `Alta Suciedad -> Los Chicos`.
-3. Corregir contradicción de BPM en `Arte Infernal`.
-4. Unificar encabezado y estructura de `Sobrio a las Piñas`.
-5. Decidir si `La Rubia` debe renombrarse a `La Rubia Tarada` y si entra o no al `tracklist.md`.
-6. Reforzar con referencias internas los temas de `Justo Alegre`, porque hoy no tienen validación pública clara.
+1. Corregir la nota final de `canciones/arte-infernal.md` para alinearla con `134/135 BPM`.
+2. Mejorar las referencias internas de `canciones/you-really-got-me-now.md` para que apunten al tema exacto y no a búsquedas genéricas.
+3. Aclarar en `canciones/sobrio-a-las-pinias.md` si `120` es el tempo adoptado por la banda.
+4. Reforzar con referencias internas o privadas los temas de `Justo Alegre`, porque siguen sin validación pública clara.
 
 ## Fuentes usadas
 
-- The Kinks - `You Really Got Me`: [Wikipedia](https://en.wikipedia.org/wiki/You_Really_Got_Me)
-- The Kinks - tab de batería: [Songsterr](https://www.songsterr.com/a/wsa/kinks-you-really-got-me-drum-tab-s10803)
 - Andrés Calamaro - `Alta suciedad` BPM: [SongBPM](https://songbpm.com/%40andres-calamaro/alta-suciedad)
 - Andrés Calamaro - `Los chicos` BPM: [SongBPM](https://songbpm.com/%40andres-calamaro/los-chicos-e3db4e45-9797-4077-a257-23a6ae3ef10b)
 - Andrés Calamaro - tab de batería `Alta suciedad`: [Songsterr](https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139)
@@ -207,13 +197,14 @@ Tabs batería:
 - Patricio Rey y sus Redonditos de Ricota - tab de batería `Nadie es Perfecto`: [Songsterr](https://www.songsterr.com/a/wsa/patricio-rey-y-sus-redonditos-de-ricota-nadie-es-perfecto-drum-tab-s1331648)
 - Stevie Ray Vaughan - `Pride and Joy` BPM: [SongBPM](https://stg.songbpm.com/%40stevie-ray-vaughan/pride-and-joy)
 - Stevie Ray Vaughan - tab de batería `Pride And Joy`: [Songsterr](https://www.songsterr.com/a/wsa/stevie-ray-vaughan-double-trouble-pride-and-joy-drum-tab-s240)
+- Jon Bon Jovi - `You Really Got Me Now` BPM: [SongBPM](https://songbpm.com/%40jon-bon-jovi/you-really-got-me-now)
+- Jon Bon Jovi - `You Really Got Me Now` créditos/BPM: [Shazam](https://www.shazam.com/song/1440658020/you-really-got-me-now)
+- Jon Bon Jovi - `You Really Got Me Now` oficial: [YouTube](https://www.youtube.com/watch?v=Fxhhbn9Mvs8)
 - La Renga - `Arte Infernal` oficial: [YouTube](https://www.youtube.com/watch?v=3wAG0QnX1C0)
 - La Renga - `Arte Infernal` BPM: [Shazam](https://www.shazam.com/song/1443620085/arte-infernal)
 - Steppenwolf - `Born To Be Wild` BPM: [SongBPM](https://songbpm.com/%40steppenwolf/born-to-be-wild)
 - Steppenwolf - tab de batería `Born To Be Wild`: [Songsterr](https://www.songsterr.com/a/wsa/steppenwolf-born-to-be-wild-drum-tab-s244)
 - Divididos - `Sobrio A Las Piñas/Quien Se Tomó Todo El Vino` BPM: [SongBPM](https://songbpm.com/%40divididos/sobrio-a-las-pinas-quien-se-tomo-todo-el-vino)
+- Divididos - `Sobrio a las Piñas / ¿Quién Se Tomó Todo el Vino? - En Vivo` BPM: [SongBPM](https://songbpm.com/%40divididos/sobrio-a-las-pinas-quien-se-tomo-todo-el-vino---en-vivo)
 - Divididos - tab de batería `Sobrio a las piñas`: [Songsterr](https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-drums-drum-tab-s928213)
 - Divididos - transcripción textual de batería `Sobrio a las Piñas`: [CIFRAS](https://www.cifras.com.br/cifra/divididos/sobrio-a-las-pinas)
-- Sumo - `La Rubia Tarada` BPM: [SongBPM](https://songbpm.com/%40sumo/la-rubia-tarada)
-- Divididos - `La Rubia Tarada (En Vivo)` BPM/créditos: [Shazam](https://www.shazam.com/song/1811628199/la-rubia-tarada)
-- Divididos - tab de batería `La Rubia Tarada`: [Songsterr](https://www.songsterr.com/a/wsa/divididos-la-rubia-tarada-drum-tab-s4343797)

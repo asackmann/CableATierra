@@ -34,6 +34,28 @@
 
 ---
 
+## Grooves
+
+### Groove base moderato
+```
+HH: x . x . x . x .
+SD:   o       o
+BD: o   o     o
+```
+> Patrón base sobrio, con pocas variaciones y foco total en estabilidad.
+
+### Puente con toms simples
+```
+HH: x . x . x . x .
+SD:   o       o
+T1:         o
+FT:             o
+BD: o     o
+```
+> Usar toms como color, sin perder la línea del pulso.
+
+---
+
 ## Fills destacados
 
 - Toms simples en transiciones.

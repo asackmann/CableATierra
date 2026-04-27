@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Shuffle base
+```
+HH: x . x x . x x .
+SD:   o       o
+BD: o     o
+```
+> Shuffle relajado, apoyado atrás del beat. La sensación manda más que la cuadrícula.
+
+### Shuffle abierto para solos
+```
+RD: x . x x . x x .
+SD:   o       o
+BD: o   o   o
+```
+> Abrir apenas el plato o ride durante el solo, dejando más aire entre golpes.
+
+---
+
 ## Fills destacados
 
 - Shuffle clásico de 1 compás antes de solos.

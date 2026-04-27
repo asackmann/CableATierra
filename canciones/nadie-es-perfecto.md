@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Rock sucio base
+```
+HH: x . x . x . x .
+SD:   o       o
+BD: o   o o   o
+```
+> Hi-hat opaco, caja pesada y bombo empujando sin volverse prolijo de más.
+
+### Coro contenido
+```
+RD: x . x . x . x .
+SD:   o       o
+BD: o o   o   o
+```
+> Abrir un poco el sonido, pero sin perder el carácter mugriento del tema.
+
+---
+
 ## Fills destacados
 
 - Cortos y sucios en cambios de sección.

@@ -34,6 +34,28 @@
 
 ---
 
+## Grooves
+
+### Groove base laid back
+```
+HH: x . x . x . x .
+SD:   o       o
+BD: o     o   o
+CB: o . . . o . . .
+```
+> El cowbell y el hi-hat ayudan a sostener el feel. La caja debe sentirse atrás del beat.
+
+### Coro abierto
+```
+RD: x . x . x . x .
+SD:   o       o
+BD: o   o   o
+CB: o . . . o . . .
+```
+> Mantener aire y suciedad controlada, sin convertirlo en un rock recto.
+
+---
+
 ## Fills destacados
 
 - Cortos y sucios al final de bloques.

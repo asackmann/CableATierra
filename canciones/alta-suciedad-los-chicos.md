@@ -24,6 +24,10 @@
 | 5 | Los Chicos       | 24       | 135       | groove simple        | Sin crash final, sostener pulso            |
 | 6 | Outro            | 8        | 135       | cierre limpio        | Salida prolija al tema siguiente           |
 
+
+- https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139 
+![alt text](<CleanShot 2026-04-26 at 23.47.00@2x.png>)
+
 ---
 
 ## Cues
@@ -31,6 +35,34 @@
 - Arranque con pulso claro para ordenar el cambio de tempo.
 - Transición a 135 sin corte de banda.
 - No usar crash final en el cierre.
+
+---
+
+## Grooves
+
+### Alta Suciedad (rock medio)
+```
+HH: x x x x x x x x
+SD:     o       o
+BD: o o     o 
+```
+> Groove directo, con hi-hat cerrado y bombo acompañando el fraseo sin llenar demasiado.
+
+### Puente transición
+```
+HH: x x x x x x x x
+SD:     o       o
+BD: o o     o 
+```
+> Mantener el pulso firme para que la banda sienta claramente el paso de 106 a 135.
+
+### Los Chicos (rock arriba)
+```
+CY: x x x x x x x x
+SD:   o      o 
+BD: o   o o     o
+```
+> Abrir el sonido con ride o crash-ride, pero sin sobrecargar el cierre del medley.
 
 ---
 

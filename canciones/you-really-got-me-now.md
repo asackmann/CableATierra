@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Power rock base
+```
+HH: x . x . x . x .
+SD:   o       o
+BD: o   o o   o
+```
+> Patrón firme y corto, siguiendo de cerca el riff principal.
+
+### Coro abierto
+```
+CY: x . x . x . x .
+SD:   o       o
+BD: o o   o   o
+```
+> Abrir el sonido con crash-ride o ride pesado, sosteniendo la caja bien al frente.
+
+---
+
 ## Fills destacados
 
 - Fills pesados y cortos.

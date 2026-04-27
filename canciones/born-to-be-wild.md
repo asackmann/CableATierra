@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Rock rápido base
+```
+HH: x . x . x . x .
+SD:   o       o
+BD: o o   o   o
+```
+> Patrón clásico de rock rápido, con bombo parejo y caja firme en 2 y 4.
+
+### Coro abierto
+```
+CY: x . x . x . x .
+SD:   o       o
+BD: o o o   o o
+```
+> Abrir el sonido en el coro, manteniendo el control para no correr el tempo.
+
+---
+
 ## Fills destacados
 
 - Rápidos pero controlados.

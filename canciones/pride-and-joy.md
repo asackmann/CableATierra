@@ -34,6 +34,26 @@
 
 ---
 
+## Grooves
+
+### Texas shuffle base
+```
+HH: x . x x . x x .
+SD:   o       o
+BD: o   o   o
+```
+> Shuffle con rebote natural. El ride/hi-hat debe respirar y no sonar mecánico.
+
+### Shuffle abierto para solos
+```
+RD: x . x x . x x .
+SD:   o       o
+BD: o o   o   o
+```
+> Abrir apenas la textura en los solos, manteniendo el swing parejo.
+
+---
+
 ## Fills destacados
 
 - Shuffle clásico en caja y toms.

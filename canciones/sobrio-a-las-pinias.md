@@ -34,6 +34,34 @@
 
 ---
 
+## Grooves
+
+### Groove base
+```
+HH: x . x . x . x .
+SD:     o       o
+BD: o       o   
+```
+> Patrón denso pero con aire. La base tiene que dejar lugar a los cortes y a la dinámica.
+
+### Puente con silencios
+```
+HH: x . x . x . x .
+SD:     o       o
+BD: o       o   
+```
+> Cortar platos y dejar huecos claros para que la banda respire junta.
+
+### Final abierto
+```
+HH: x . x . x . x .
+SD:     o       o
+BD: o       o   
+```
+> Subir energía sin convertirlo en carrera. El remate tiene que sentirse grande pero controlado.
+
+---
+
 ## Fills destacados
 
 - Cortes antes que fills largos.
