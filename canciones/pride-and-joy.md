@@ -36,6 +36,11 @@
 
 ## Grooves
 
+
+- https://www.songsterr.com/a/wsa/stevie-ray-vaughan-double-trouble-pride-and-joy-drum-tab-s240
+![alt text](<tab-honky-tonk-women.png>)
+
+
 ### Texas shuffle base
 ```
 HH: x . x x . x x .

@@ -25,8 +25,6 @@
 | 6 | Outro            | 8        | 135       | cierre limpio        | Salida prolija al tema siguiente           |
 
 
-- https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139 
-![alt text](<CleanShot 2026-04-26 at 23.47.00@2x.png>)
 
 ---
 
@@ -39,6 +37,9 @@
 ---
 
 ## Grooves
+
+- https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139 
+![alt text](<tab-alta-suciedad-los-chicos.png>)
 
 ### Alta Suciedad (rock medio)
 ```

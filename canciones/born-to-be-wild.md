@@ -36,6 +36,9 @@
 
 ## Grooves
 
+- https://www.songsterr.com/a/wsa/steppenwolf-born-to-be-wild-drum-tab-s244
+  ![alt text](<tab-born-to-be-wild.png>)
+
 ### Rock rápido base
 ```
 HH: x . x . x . x .

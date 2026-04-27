@@ -36,12 +36,17 @@
 
 ## Grooves
 
+
+- https://www.songsterr.com/a/wsa/rolling-stones-honky-tonk-women-drum-tab-s52278
+![alt text](<tab-honky-tonk-women.png>)
+
+
 ### Groove base laid back
 ```
 HH: x . x . x . x .
-SD:   o       o
-BD: o     o   o
-CB: o . . . o . . .
+SD:   o     o     o    o     o
+BD: o     o   o o    o   o o
+CB: . . . . . . . .
 ```
 > El cowbell y el hi-hat ayudan a sostener el feel. La caja debe sentirse atrás del beat.
 
