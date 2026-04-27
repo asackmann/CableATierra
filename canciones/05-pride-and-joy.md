@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra ya adentro del shuffle; no hay tiempo para encontrarlo después.
+- Antes del primer golpe: cantar internamente el triplete para que no salga recto.
+- Si la entrada rebota natural y no suena cuadrada, el resto del tema se acomoda solo.
+
+---
+
 ## Grooves
 
 

@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra desde el arranque con energía alta, pero la consigna mental es control.
+- Antes del primer golpe: pensar tempo grande, no rapidez de manos.
+- El primer compás tiene que afirmar el pulso y evitar el clásico acelerón de entusiasmo.
+
+---
+
 ## Grooves
 
 - https://www.songsterr.com/a/wsa/steppenwolf-born-to-be-wild-drum-tab-s244

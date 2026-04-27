@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra a sostener mugre y pulso, no prolijidad.
+- Primer pensamiento: hi-hat opaco, caja pesada, nada de "embellecer" el arranque.
+- Si el primer compás suena medio sucio pero estable, está bien.
+
+---
+
 ## Grooves
 
 ### Rock sucio base

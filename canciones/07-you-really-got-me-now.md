@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra pegada al riff: primero escuchar guitarra, después clavar la base.
+- La cabeza tiene que pensar "power controlado", no velocidad.
+- Si la caja entra firme desde el primer compás, el tema ya se acomoda solo.
+
+---
+
 ## Grooves
 
 ### Power rock base

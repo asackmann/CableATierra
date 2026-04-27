@@ -6,16 +6,16 @@ Setlist oficial para ensayos y show. Orden, curva y claves ya definidas.
 
 | # | Canción | Artista Original | BPM | Clave | Estado |
 |---|---------|------------------|-----|-------|--------|
-| 1 | [Alta Suciedad -> Los Chicos](canciones/alta-suciedad-los-chicos.md) | Calamaro | 106 -> 135 | transición directa, bajar energía sin cortar | 🟢 lista |
-| 2 | [Blues del Ataúd](canciones/blues-del-ataud.md) | Justo Alegre | ~72 (shuffle) | feel > precisión | 🟢 lista |
-| 3 | [Honky Tonk Women](canciones/honky-tonk-women.md) | The Rolling Stones | ~120 | laid back | 🟢 lista |
-| 4 | [Nadie es Perfecto](canciones/nadie-es-perfecto.md) | Patricio Rey y sus Redonditos de Ricota | ~162 | groove sucio | 🟢 lista |
-| 5 | [Pride and Joy](canciones/pride-and-joy.md) | Stevie Ray Vaughan | ~120 (shuffle) | tema clave | 🟢 lista |
-| 6 | [Blunders Paradise](canciones/blunders-paradise.md) | Justo Alegre | ~77 | moderato | 🟢 lista |
-| 7 | [You Really Got Me Now](canciones/you-really-got-me-now.md) | Bon Jovi | ~110 | power | 🟢 lista |
-| 8 | [Arte Infernal](canciones/arte-infernal.md) | La Renga | ~135 | no caerse | 🟢 lista |
-| 9 | [Born To Be Wild](canciones/born-to-be-wild.md) | Steppenwolf | ~146 | no acelerar | 🟢 lista |
-|10 | [Sobrio a las Piñas](canciones/sobrio-a-las-pinias.md) | Divididos | ~120 | dinámica / cortes | 🟢 lista |
+| 1 | [Alta Suciedad -> Los Chicos](canciones/01-alta-suciedad-los-chicos.md) | Calamaro | 106 -> 135 | transición directa, bajar energía sin cortar | 🟢 lista |
+| 2 | [Blues del Ataúd](canciones/02-blues-del-ataud.md) | Justo Alegre | ~72 (shuffle) | feel > precisión | 🟢 lista |
+| 3 | [Honky Tonk Women](canciones/03-honky-tonk-women.md) | The Rolling Stones | ~120 | laid back | 🟢 lista |
+| 4 | [Nadie es Perfecto](canciones/04-nadie-es-perfecto.md) | Patricio Rey y sus Redonditos de Ricota | ~162 | groove sucio | 🟢 lista |
+| 5 | [Pride and Joy](canciones/05-pride-and-joy.md) | Stevie Ray Vaughan | ~120 (shuffle) | tema clave | 🟢 lista |
+| 6 | [Blunders Paradise](canciones/06-blunders-paradise.md) | Justo Alegre | ~77 | moderato | 🟢 lista |
+| 7 | [You Really Got Me Now](canciones/07-you-really-got-me-now.md) | Bon Jovi | ~110 | power | 🟢 lista |
+| 8 | [Arte Infernal](canciones/08-arte-infernal.md) | La Renga | ~135 | no caerse | 🟢 lista |
+| 9 | [Born To Be Wild](canciones/09-born-to-be-wild.md) | Steppenwolf | ~146 | no acelerar | 🟢 lista |
+|10 | [Sobrio a las Piñas](canciones/10-sobrio-a-las-pinias.md) | Divididos | ~120 | dinámica / cortes | 🟢 lista |
 
 ---
 

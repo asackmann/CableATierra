@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra para ordenar, no para adornar.
+- Primeros compases: tocar simple y dejar que la banda se acomode arriba del pulso.
+- Si la entrada suena sólida y seca, ya está cumpliendo su función.
+
+---
+
 ## Grooves
 
 ### Groove base moderato

@@ -36,6 +36,13 @@
 
 ---
 
+## Notas mentales
+- Entrada, guitarra disto, 1 compas, Entra con Redoblante: Pa, tun tun pa tun pa. 
+- Pensar la entrada como groove, no como fill de apertura.
+- En el pase a `Los Chicos`, la cabeza tiene que escuchar primero el tempo nuevo y recién después abrir el plato.
+
+---
+
 ## Grooves
 
 - https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139 

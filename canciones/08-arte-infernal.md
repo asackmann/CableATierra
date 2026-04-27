@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra desde el principio y tiene que imponer peso, no velocidad.
+- Primer pensamiento: bombo firme y caja grande, sin correr el riff.
+- Si la entrada se siente pesada y simple, el tema ya quedó bien plantado.
+
+---
+
 ## Grooves
 
 ### Rock pesado base

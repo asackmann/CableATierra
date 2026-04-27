@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra con aire: primero sentir el balanceo antes que el backbeat.
+- Pensar la entrada más atrás del beat de lo que el cuerpo pide.
+- Si el primer verso queda cómodo y relajado, el feel del tema ya está ganado.
+
+---
+
 ## Grooves
 
 

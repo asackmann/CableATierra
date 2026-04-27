@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería no tiene que "caer" encima del tema: entra relajada, casi como si ya viniera sonando.
+- Escuchar primero el swing interno antes de marcar el shuffle.
+- Primer objetivo al entrar: dejar aire y no apretar los primeros dos compases.
+
+---
+
 ## Grooves
 
 ### Shuffle base

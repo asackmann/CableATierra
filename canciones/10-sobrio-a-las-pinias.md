@@ -34,6 +34,14 @@
 
 ---
 
+## Notas mentales
+
+- La batería entra con actitud, pero dejando espacio desde el primer compás.
+- Primer foco mental: golpes grandes, silencios claros.
+- Antes de cada reentrada después de un corte, pensar más en la respiración del tema que en el fill.
+
+---
+
 ## Grooves
 
 - https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-drums-drum-tab-s928213
