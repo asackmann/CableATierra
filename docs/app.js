@@ -4,12 +4,15 @@ const SONG_ROOT = `${DATA_ROOT}/canciones`;
 const els = {
   nav: document.querySelector("#track-nav"),
   home: document.querySelector("#home-view"),
+  summary: document.querySelector("#home-summary"),
+  playlist: document.querySelector("#playlist-panel"),
   track: document.querySelector("#track-view"),
   trackContent: document.querySelector("#track-content"),
   trackMeta: document.querySelector("#track-meta"),
   title: document.querySelector("#page-title"),
   subtitle: document.querySelector("#page-subtitle"),
   back: document.querySelector("#back-button"),
+  primaryLink: document.querySelector("#primary-link"),
 };
 
 let tracks = [];
@@ -49,6 +52,30 @@ function renderNav() {
 function renderHome() {
   els.title.textContent = "CableATierra";
   els.subtitle.textContent = homeCopy;
+  els.primaryLink.textContent = "Ver datos del set";
+  els.primaryLink.href = "./data/tracks.json";
+
+  const readyCount = tracks.filter((track) => track.status.includes("🟢")).length;
+  const shuffleCount = tracks.filter((track) => track.bpm.includes("shuffle")).length;
+
+  els.summary.innerHTML = `
+    <article class="summary-card">
+      <h2>${tracks.length}</h2>
+      <p>Tracks navegables en el set actual.</p>
+    </article>
+    <article class="summary-card">
+      <h2>${readyCount}</h2>
+      <p>Temas marcados como listos para ensayo o show.</p>
+    </article>
+    <article class="summary-card">
+      <h2>${shuffleCount}</h2>
+      <p>Temas con feel shuffle o swing declarado.</p>
+    </article>
+    <article class="summary-card">
+      <h2>10</h2>
+      <p>Entradas mentales y grooves a una sola navegación.</p>
+    </article>
+  `;
 
   els.home.innerHTML = `
     <div class="home-grid">
@@ -72,6 +99,8 @@ function renderHome() {
   `;
 
   els.home.classList.remove("hidden");
+  els.summary.classList.remove("hidden");
+  els.playlist.classList.remove("hidden");
   els.track.classList.add("hidden");
 }
 
@@ -102,6 +131,8 @@ async function renderTrack(slug) {
 
   els.title.textContent = track.title;
   els.subtitle.textContent = `${track.artist} • ${track.bpm} • ${track.key}`;
+  els.primaryLink.textContent = "Abrir markdown del track";
+  els.primaryLink.href = `${SONG_ROOT}/${track.file}`;
 
   const response = await fetch(`${SONG_ROOT}/${track.file}`);
   if (!response.ok) {
@@ -118,6 +149,8 @@ async function renderTrack(slug) {
     <span class="meta-chip">${escapeHtml(track.status)}</span>
   `;
 
+  els.summary.classList.add("hidden");
+  els.playlist.classList.add("hidden");
   els.home.classList.add("hidden");
   els.track.classList.remove("hidden");
   setActiveNav(slug);

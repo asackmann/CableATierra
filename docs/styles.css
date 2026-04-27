@@ -27,6 +27,7 @@ body {
     radial-gradient(circle at bottom right, rgba(106, 176, 155, 0.14), transparent 26%),
     linear-gradient(180deg, #0f1013 0%, #17191e 100%);
   font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.45;
 }
 
 a {
@@ -54,6 +55,7 @@ button {
   border-right: 1px solid var(--line);
   background: rgba(15, 16, 19, 0.82);
   backdrop-filter: blur(12px);
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.03);
 }
 
 .brand {
@@ -100,6 +102,7 @@ button {
   gap: 0.65rem;
   overflow: auto;
   padding-right: 0.25rem;
+  scrollbar-width: thin;
 }
 
 .track-link {
@@ -110,6 +113,7 @@ button {
   background: rgba(255, 255, 255, 0.03);
   text-decoration: none;
   transition:
+    box-shadow 160ms ease,
     transform 160ms ease,
     border-color 160ms ease,
     background 160ms ease;
@@ -120,6 +124,7 @@ button {
   transform: translateX(2px);
   border-color: rgba(255, 139, 77, 0.35);
   background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .track-link-title {
@@ -151,11 +156,13 @@ button {
   border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 0.7rem;
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
 }
 
 .main-panel {
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
+  max-width: 1400px;
 }
 
 .hero {
@@ -195,12 +202,49 @@ button {
   color: var(--ink);
   text-decoration: none;
   cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.ghost-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 139, 77, 0.35);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+}
+
+.summary-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.summary-card {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(30, 33, 40, 0.92), rgba(21, 23, 28, 0.92));
+  box-shadow: var(--shadow);
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.summary-card p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .playlist-panel {
@@ -215,6 +259,10 @@ button {
   border-radius: 28px;
   background: var(--paper);
   box-shadow: var(--shadow);
+}
+
+.playlist-panel.hidden {
+  display: none;
 }
 
 .playlist-panel h2 {
@@ -264,9 +312,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+  margin-top: auto;
 }
 
-.view.hidden {
+.hidden {
   display: none;
 }
 
@@ -276,6 +325,7 @@ button {
   gap: 1rem;
   align-items: flex-start;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .track-meta {
@@ -291,6 +341,7 @@ button {
   border-radius: 28px;
   background: linear-gradient(180deg, rgba(24, 26, 31, 0.98), rgba(20, 22, 27, 0.94));
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .markdown-body h1,
@@ -300,12 +351,27 @@ button {
   line-height: 1.08;
 }
 
+.markdown-body h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.markdown-body h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.markdown-body h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
 .markdown-body pre {
   overflow: auto;
   padding: 1rem;
   border-radius: 16px;
   background: #0d0f13;
   color: #efe3d3;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .markdown-body code {
@@ -335,6 +401,8 @@ button {
   border-collapse: collapse;
   margin: 1rem 0;
   overflow: hidden;
+  display: block;
+  overflow-x: auto;
 }
 
 .markdown-body th,
@@ -342,6 +410,7 @@ button {
   padding: 0.7rem;
   border: 1px solid var(--line);
   vertical-align: top;
+  min-width: 120px;
 }
 
 .markdown-body blockquote {
@@ -358,6 +427,7 @@ button {
   .sidebar {
     position: static;
     height: auto;
+    padding-bottom: 1rem;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
@@ -367,8 +437,7 @@ button {
   }
 
   .hero,
-  .track-toolbar,
-  .playlist-panel {
+  .track-toolbar {
     flex-direction: column;
   }
 
@@ -376,7 +445,28 @@ button {
     justify-content: flex-start;
   }
 
+  .summary-strip,
   .playlist-panel {
     grid-template-columns: 1fr;
+  }
+
+  .track-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.3rem;
+  }
+
+  .track-link {
+    min-width: 220px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .markdown-body {
+    padding: 1rem;
+    border-radius: 22px;
   }
 }
