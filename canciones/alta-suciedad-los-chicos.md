@@ -29,7 +29,7 @@
 ## Cues
 
 - Arranque con pulso claro para ordenar el cambio de tempo.
-- Transición a 116 sin corte de banda.
+- Transición a 135 sin corte de banda.
 - No usar crash final en el cierre.
 
 ---
@@ -37,7 +37,7 @@
 ## Fills destacados
 
 - Cortos y sucios en finales de frase.
-- Evitar fills largos en la transición 124 -> 116.
+- Evitar fills largos en la transición 106 -> 135.
 
 ---
 
@@ -52,4 +52,4 @@
 
 - 🎵 Escuchar versión original: Calamaro — Alta Suciedad
 - 🥁 Buscar covers en YouTube para referencia de feeling
-- 📝 **Transcripción:** Escuchar atento el puente 124→116, es la clave del tema. Apuntar tiempos de cambio de BPM.
+- 📝 **Transcripción:** Escuchar atento el puente 106→135, es la clave del tema. Apuntar tiempos de cambio de BPM.

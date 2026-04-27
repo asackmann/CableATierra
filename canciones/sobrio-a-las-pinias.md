@@ -4,7 +4,7 @@
 
 | Campo        | Valor             |
 |--------------|-------------------|
-| **BPM**      | ~92 / 118 vivo    |
+| **BPM**      |  120 vivo    |
 | **Tonalidad**| Por definir       |
 | **Compás**   | 4/4               |
 | **Duración** | ~4:00             |
@@ -17,12 +17,12 @@
 
 | # | Parte      | Compases | BPM          | Groove                | Notas                               |
 |---|------------|----------|---------------|-----------------------|-------------------------------------|
-| 1 | Intro      | 8        | 116  | groove denso          | Entrada con espacio                  |
-| 2 | Verso A    | 16       | 116  | rock con aire         | Controlar dinámica                   |
-| 3 | Estribillo | 8        | 116  | groove abierto        | Cortes definidos                     |
-| 4 | Verso B    | 16       | 116  | rock con aire         | Menos es más                         |
-| 5 | Puente     | 8        | 116  | cortes + silencios    | Dejar respirar                       |
-| 6 | Final      | 16       |  116 | cierre dinámico       | Remates limpios, acelerón final     |
+| 1 | Intro      | 8        | 120  | groove denso          | Entrada con espacio                  |
+| 2 | Verso A    | 16       | 120  | rock con aire         | Controlar dinámica                   |
+| 3 | Estribillo | 8        | 120  | groove abierto        | Cortes definidos                     |
+| 4 | Verso B    | 16       | 120  | rock con aire         | Menos es más                         |
+| 5 | Puente     | 8        | 120 | cortes + silencios    | Dejar respirar                       |
+| 6 | Final      | 16       |  120 | cierre dinámico       | Remates limpios, acelerón final     |
 
 ---
 
@@ -52,4 +52,4 @@
 
 - 🎵 Divididos — Sobrio a las Piñas
 - 🥁 Buscar versiones en vivo de Divididos (Smirnoff, acústicos, etc)
-- 📝 **Transcripción:** Clave: cómo transiciona de ~92 a 118 vivo. Escuchar estructura de cortes y silencios. Cada golpe de bombo cuenta. Apuntar exactitud del acelerón final.
+- 📝 **Transcripción:** Clave: cómo transiciona de 120. Escuchar estructura de cortes y silencios. Cada golpe de bombo cuenta. Apuntar exactitud del acelerón final.
