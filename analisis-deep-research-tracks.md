@@ -22,16 +22,16 @@ Los puntos que hoy sí merecen ajuste ya no son tanto de metadata musical sino d
 
 ### Ajustes que ya quedaron resueltos
 
-- `canciones/arte-infernal.md` ya no dice `~95`; ahora la nota final quedó alineada con `~135`.
-- `canciones/alta-suciedad-los-chicos.md` sigue consistente con la transición `106 -> 135`.
-- `tracklist.md` y `canciones/you-really-got-me-now.md` siguen alineados.
+- `canciones/08-arte-infernal.md` ya no dice `~95`; ahora la nota final quedó alineada con `~135`.
+- `canciones/01-alta-suciedad-los-chicos.md` sigue consistente con la transición `106 -> 135`.
+- `tracklist.md` y `canciones/07-you-really-got-me-now.md` siguen alineados.
 
 ### Problemas que siguen abiertos
 
-- `canciones/pride-and-joy.md` muestra una imagen equivocada: referencia `tab-honky-tonk-women.png` en vez de `tab-pride-and-joy.png`.
-- `canciones/sobrio-a-las-pinias.md` quedó consistente a `120`, pero todavía convendría documentar si ese valor es `versión banda`.
-- `canciones/honky-tonk-women.md` tiene una tablatura escrita más ambiciosa, pero la línea de caja/bombo del groove base quedó difícil de leer y no mantiene el mismo nivel de claridad que el resto del repo.
-- `canciones/sobrio-a-las-pinias.md` usa tres grooves prácticamente idénticos, lo que hace que la sección aporte menos información de la que podría.
+- `canciones/05-pride-and-joy.md` muestra una imagen equivocada: referencia `tab-honky-tonk-women.png` en vez de `tab-pride-and-joy.png`.
+- `canciones/10-sobrio-a-las-pinias.md` quedó consistente a `120`, pero todavía convendría documentar si ese valor es `versión banda`.
+- `canciones/03-honky-tonk-women.md` tiene una tablatura escrita más ambiciosa, pero la línea de caja/bombo del groove base quedó difícil de leer y no mantiene el mismo nivel de claridad que el resto del repo.
+- `canciones/10-sobrio-a-las-pinias.md` usa tres grooves prácticamente idénticos, lo que hace que la sección aporte menos información de la que podría.
 - `Blues del Ataúd` y `Blunders Paradise` siguen sin validación pública sólida ni tabs externas confiables.
 
 ## Evaluación por track
@@ -55,7 +55,7 @@ Los puntos que hoy sí merecen ajuste ya no son tanto de metadata musical sino d
 
 En la revisión anterior este era el error más claro del repo. Ahora ya no lo es.
 
-- `canciones/arte-infernal.md:55` pasó a `Tempo ~135 muy importante`
+- `canciones/08-arte-infernal.md:55` pasó a `Tempo ~135 muy importante`
 - Eso ya está alineado con el BPM del archivo y con la referencia externa
 
 Conclusión:
@@ -66,7 +66,7 @@ Conclusión:
 
 Este es hoy el problema más claro dentro de las nuevas tablaturas embebidas.
 
-- `canciones/pride-and-joy.md:40-41` referencia Songsterr de `Pride and Joy`
+- `canciones/05-pride-and-joy.md:40-41` referencia Songsterr de `Pride and Joy`
 - pero la imagen insertada es `tab-honky-tonk-women.png`
 - en la carpeta sí existe `canciones/tab-pride-and-joy.png`
 
@@ -79,14 +79,14 @@ Conclusión:
 Ahora el archivo está mucho más consistente que antes:
 
 - `tracklist.md:18` usa `~120`
-- `canciones/sobrio-a-las-pinias.md:7` usa `120 vivo`
+- `canciones/10-sobrio-a-las-pinias.md:7` usa `120 vivo`
 - la estructura desarrolla todo a `120`
 
 Eso ya no es una contradicción.
 
 Lo que sí veo ahora:
 
-- `Groove base`, `Puente con silencios` y `Final abierto` en `canciones/sobrio-a-las-pinias.md:42-63` usan prácticamente el mismo patrón escrito
+- `Groove base`, `Puente con silencios` y `Final abierto` en `canciones/10-sobrio-a-las-pinias.md:42-63` usan prácticamente el mismo patrón escrito
 - cambia la descripción, pero casi no cambia la tablatura
 
 Conclusión:
@@ -95,7 +95,7 @@ Conclusión:
 
 ### 4. `Honky Tonk Women` ganó una tab embebida, pero quedó menos legible que el resto
 
-- `canciones/honky-tonk-women.md:44-50` tiene una notación más larga para caja y bombo
+- `canciones/03-honky-tonk-women.md:44-50` tiene una notación más larga para caja y bombo
 - comparado con el resto del repo, esa tablatura quedó menos clara visualmente
 - además el `CB` del groove base figura vacío en la línea escrita, aunque la descripción menciona que el cowbell ayuda a sostener el feel
 
@@ -197,10 +197,10 @@ Recomendación:
 
 ## Prioridad de correcciones sugerida
 
-1. Corregir en [pride-and-joy.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/pride-and-joy.md:41) la imagen `tab-honky-tonk-women.png` por `tab-pride-and-joy.png`.
-2. Mejorar la legibilidad del groove base en [honky-tonk-women.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/honky-tonk-women.md:44).
-3. Hacer que las tres secciones de grooves de [sobrio-a-las-pinias.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/sobrio-a-las-pinias.md:42) se distingan más entre sí.
-4. Si quieren mantener un criterio uniforme, agregar imagen/tab embebida también a [you-really-got-me-now.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/you-really-got-me-now.md:37).
+1. Corregir en [05-pride-and-joy.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/05-pride-and-joy.md:41) la imagen `tab-honky-tonk-women.png` por `tab-pride-and-joy.png`.
+2. Mejorar la legibilidad del groove base en [03-honky-tonk-women.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/03-honky-tonk-women.md:44).
+3. Hacer que las tres secciones de grooves de [10-sobrio-a-las-pinias.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/10-sobrio-a-las-pinias.md:42) se distingan más entre sí.
+4. Si quieren mantener un criterio uniforme, agregar imagen/tab embebida también a [07-you-really-got-me-now.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/07-you-really-got-me-now.md:37).
 5. Reforzar con referencias privadas o internas los temas de `Justo Alegre`.
 
 ## Fuentes usadas

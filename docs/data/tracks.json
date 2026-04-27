@@ -1,0 +1,102 @@
+[
+  {
+    "number": 1,
+    "slug": "01-alta-suciedad-los-chicos",
+    "file": "01-alta-suciedad-los-chicos.md",
+    "title": "Alta Suciedad -> Los Chicos",
+    "artist": "Calamaro",
+    "bpm": "106 -> 135",
+    "key": "transición directa, bajar energía sin cortar",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 2,
+    "slug": "02-blues-del-ataud",
+    "file": "02-blues-del-ataud.md",
+    "title": "Blues del Ataúd",
+    "artist": "Justo Alegre",
+    "bpm": "~72 (shuffle)",
+    "key": "feel > precisión",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 3,
+    "slug": "03-honky-tonk-women",
+    "file": "03-honky-tonk-women.md",
+    "title": "Honky Tonk Women",
+    "artist": "The Rolling Stones",
+    "bpm": "~120",
+    "key": "laid back",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 4,
+    "slug": "04-nadie-es-perfecto",
+    "file": "04-nadie-es-perfecto.md",
+    "title": "Nadie es Perfecto",
+    "artist": "Patricio Rey y sus Redonditos de Ricota",
+    "bpm": "~162",
+    "key": "groove sucio",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 5,
+    "slug": "05-pride-and-joy",
+    "file": "05-pride-and-joy.md",
+    "title": "Pride and Joy",
+    "artist": "Stevie Ray Vaughan",
+    "bpm": "~120 (shuffle)",
+    "key": "tema clave",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 6,
+    "slug": "06-blunders-paradise",
+    "file": "06-blunders-paradise.md",
+    "title": "Blunders Paradise",
+    "artist": "Justo Alegre",
+    "bpm": "~77",
+    "key": "moderato",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 7,
+    "slug": "07-you-really-got-me-now",
+    "file": "07-you-really-got-me-now.md",
+    "title": "You Really Got Me Now",
+    "artist": "Bon Jovi",
+    "bpm": "~110",
+    "key": "power",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 8,
+    "slug": "08-arte-infernal",
+    "file": "08-arte-infernal.md",
+    "title": "Arte Infernal",
+    "artist": "La Renga",
+    "bpm": "~135",
+    "key": "no caerse",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 9,
+    "slug": "09-born-to-be-wild",
+    "file": "09-born-to-be-wild.md",
+    "title": "Born To Be Wild",
+    "artist": "Steppenwolf",
+    "bpm": "~146",
+    "key": "no acelerar",
+    "status": "🟢 lista"
+  },
+  {
+    "number": 10,
+    "slug": "10-sobrio-a-las-pinias",
+    "file": "10-sobrio-a-las-pinias.md",
+    "title": "Sobrio a las Piñas",
+    "artist": "Divididos",
+    "bpm": "~120",
+    "key": "dinámica / cortes",
+    "status": "🟢 lista"
+  }
+]

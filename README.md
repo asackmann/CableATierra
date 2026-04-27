@@ -10,9 +10,10 @@ Este repositorio sirve como cuaderno de notas para el baterista: BPM, partes de 
 CableATierra/
 ├── README.md          → Este archivo
 ├── tracklist.md       → Lista completa de canciones con info rápida
+├── docs/              → Sitio web listo para GitHub Pages
 └── canciones/         → Una carpeta por canción con notas detalladas
     ├── _TEMPLATE.md   → Plantilla para agregar nuevas canciones
-    └── <cancion>.md   → Notas de cada canción
+    └── NN-<cancion>.md→ Notas de cada canción
 ```
 
 ## ¿Cómo usar?
@@ -20,6 +21,30 @@ CableATierra/
 1. Consultar `tracklist.md` para ver el setlist con BPM y estado de cada tema.
 2. Abrir el archivo en `canciones/` para ver o editar las notas detalladas de una canción.
 3. Para agregar una nueva canción, copiar `canciones/_TEMPLATE.md` con el nombre de la canción y completar los campos.
+
+## Sitio web
+
+El repo ya incluye un sitio estático en `docs/` para publicar con GitHub Pages.
+
+### Qué muestra
+
+- portada con el setlist completo
+- navegación por track
+- render del markdown real de cada canción
+- imágenes de tablaturas cuando existan
+
+### Cómo publicarlo en GitHub
+
+1. Subir el repo a GitHub.
+2. Ir a la configuración del repo.
+3. En GitHub Pages, elegir publicar desde la rama principal usando la carpeta `docs/`.
+4. Guardar la configuración y esperar a que GitHub genere la URL pública.
+
+### Cómo mantenerlo actualizado
+
+- editar las canciones en `canciones/NN-<nombre>.md`
+- si cambias el contenido de un track, copiar también el archivo actualizado a `docs/data/canciones/`
+- si agregas un track nuevo, actualizar `tracklist.md` y `docs/data/tracks.json`
 
 ## Campos por canción
 

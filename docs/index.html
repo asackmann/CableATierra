@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CableATierra</title>
+    <meta
+      name="description"
+      content="Setlist y cuaderno de batería de CableATierra, listo para navegar desde GitHub Pages."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#/">
+          <span class="brand-kicker">CableATierra</span>
+          <span class="brand-title">Setbook</span>
+        </a>
+
+        <p class="sidebar-copy">
+          Setlist, grooves, entradas y notas de ensayo en una sola vista.
+        </p>
+
+        <nav id="track-nav" class="track-nav" aria-label="Canciones"></nav>
+
+        <div class="sidebar-footer">
+          <span class="pill">GitHub Pages</span>
+          <span class="pill">Batería</span>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="hero">
+          <div>
+            <p class="eyebrow">Repertorio activo</p>
+            <h1 id="page-title">CableATierra</h1>
+            <p id="page-subtitle" class="page-subtitle">
+              Navegación rápida del setlist y notas por track.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="ghost-button" href="../tracklist.md">Ver markdown original</a>
+          </div>
+        </header>
+
+        <section id="home-view" class="view"></section>
+        <section class="playlist-panel">
+          <div class="playlist-copy">
+            <p class="eyebrow">Escucha de referencia</p>
+            <h2>Playlist del set</h2>
+            <p>
+              Reproducción rápida del repertorio desde Spotify para repasar orden,
+              clima y transiciones.
+            </p>
+            <a
+              class="ghost-button"
+              href="https://open.spotify.com/playlist/2CCraloy1YjrCZtG1WYJlf?si=e63c64065efb4b44"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Abrir en Spotify
+            </a>
+          </div>
+
+          <div class="playlist-embed">
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/2CCraloy1YjrCZtG1WYJlf?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify playlist CableATierra"
+            ></iframe>
+          </div>
+        </section>
+        <section id="track-view" class="view hidden">
+          <div class="track-toolbar">
+            <button id="back-button" class="ghost-button" type="button">
+              Volver al setlist
+            </button>
+            <div id="track-meta" class="track-meta"></div>
+          </div>
+          <article id="track-content" class="markdown-body"></article>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

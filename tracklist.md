@@ -55,5 +55,9 @@ Setlist oficial para ensayos y show. Orden, curva y claves ya definidas.
 ---
 
 > **Cómo agregar una canción:**
-> 1. Crear el archivo en `canciones/<nombre-de-cancion>.md` usando `canciones/_TEMPLATE.md` como base.
+> 1. Crear el archivo en `canciones/NN-<nombre-de-cancion>.md` usando `canciones/_TEMPLATE.md` como base.
 > 2. Agregar una fila en esta tabla con el número, nombre (con link), artista, BPM, clave y estado.
+
+
+
+https://open.spotify.com/playlist/2CCraloy1YjrCZtG1WYJlf?si=e63c64065efb4b44
