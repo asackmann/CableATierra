@@ -1,191 +1,207 @@
 # Análisis Deep Research del Repo y de Cada Track
 
-Fecha del análisis ajustado: 2026-04-26
+Fecha del análisis ajustado: 2026-04-27
 
 ## Resumen ejecutivo
 
-Revisé nuevamente el repo después de tus cambios. El análisis anterior quedó desactualizado en varios puntos y ahora la situación cambió bastante:
+Revisé nuevamente el repo después de los últimos cambios. El estado general mejoró bastante:
 
-- `You Really Got Me` ya no aparece como tema mal atribuido: ahora el repo usa `You Really Got Me Now`, que sí corresponde a **Jon Bon Jovi / Bon Jovi**.
-- `Alta Suciedad -> Los Chicos` quedó internamente consistente en el repo.
-- `La Rubia` ya no forma parte del estado actual del repo, así que esa observación deja de aplicar.
-- Los problemas que siguen realmente vigentes son pocos y concretos:
-  - una contradicción fuerte en `Arte Infernal`
-  - una posible diferencia entre la referencia externa y la versión de banda en `Sobrio a las Piñas`
-  - ausencia de material público confiable para los temas de `Justo Alegre`
+- `You Really Got Me Now` sigue bien encaminado como track de Bon Jovi.
+- `Alta Suciedad -> Los Chicos` sigue consistente.
+- `Arte Infernal` ya no tiene la contradicción más fuerte de BPM: ahora la nota final quedó alineada con `~135`.
+- La mejora más visible del repo es que ahora varios temas incluyen tablaturas embebidas en formato similar al template, con links e imágenes.
+
+Los puntos que hoy sí merecen ajuste ya no son tanto de metadata musical sino de consistencia editorial y calidad de las tablaturas cargadas:
+
+- algunas imágenes de tablatura están bien asociadas al track
+- otras quedaron apuntando a una imagen equivocada
+- en algunos temas el patrón escrito debajo de la imagen parece demasiado genérico o incluso idéntico entre secciones donde debería variar
+- `Justo Alegre` sigue sin validación pública confiable
 
 ## Estado actual del repo
 
 ### Ajustes que ya quedaron resueltos
 
-- `tracklist.md` y `canciones/you-really-got-me-now.md` ahora están alineados con `You Really Got Me Now`.
-- `canciones/alta-suciedad-los-chicos.md` ya no tiene las contradicciones internas de BPM que aparecían antes.
-- No encontré `canciones/la-rubia.md` en el estado actual del árbol, así que quité esa parte del análisis.
+- `canciones/arte-infernal.md` ya no dice `~95`; ahora la nota final quedó alineada con `~135`.
+- `canciones/alta-suciedad-los-chicos.md` sigue consistente con la transición `106 -> 135`.
+- `tracklist.md` y `canciones/you-really-got-me-now.md` siguen alineados.
 
 ### Problemas que siguen abiertos
 
-- `canciones/arte-infernal.md` sigue mezclando un track a `135 BPM` con una nota final que habla de `~95`.
-- `canciones/sobrio-a-las-pinias.md` ahora es consistente a `120`, pero externamente las referencias más claras siguen marcando `116 BPM` para estudio y `125 BPM` para vivo. No lo llamaría error directo, pero sí una decisión que conviene documentar mejor.
-- `Blues del Ataúd` y `Blunders Paradise` siguen sin validación pública sólida ni tabs de batería confiables.
+- `canciones/pride-and-joy.md` muestra una imagen equivocada: referencia `tab-honky-tonk-women.png` en vez de `tab-pride-and-joy.png`.
+- `canciones/sobrio-a-las-pinias.md` quedó consistente a `120`, pero todavía convendría documentar si ese valor es `versión banda`.
+- `canciones/honky-tonk-women.md` tiene una tablatura escrita más ambiciosa, pero la línea de caja/bombo del groove base quedó difícil de leer y no mantiene el mismo nivel de claridad que el resto del repo.
+- `canciones/sobrio-a-las-pinias.md` usa tres grooves prácticamente idénticos, lo que hace que la sección aporte menos información de la que podría.
+- `Blues del Ataúd` y `Blunders Paradise` siguen sin validación pública sólida ni tabs externas confiables.
 
 ## Evaluación por track
 
-| Track | Validación externa | Evaluación del archivo actual | Tablatura de batería |
+| Track | Validación externa | Estado actual del archivo | Tablatura de batería |
 |---|---|---|---|
-| Alta Suciedad -> Los Chicos | `Alta suciedad` aparece pública a **106-107 BPM** y `Los chicos` a **135 BPM** | Ahora está consistente y bien alineado con la idea del medley | Sí: `Alta suciedad Drum Tab` en Songsterr. No encontré una tab clara del medley completo |
-| Blues del Ataúd | No encontré presencia pública sólida del track ni metadata confiable | Sigue siendo material útil como nota interna, pero no validable externamente hoy | No encontré tab pública confiable |
-| Honky Tonk Women | Coincide con el original de The Rolling Stones; BPM repo (~120) razonable | Archivo consistente. Buen enfoque de feel laid back | Sí: Songsterr tiene tabs concretas para batería |
-| Nadie es Perfecto | Coincide con el tema oficial; encontré referencia pública a ~159 BPM | `~162` sigue siendo razonable para ensayo | Sí: Songsterr tiene tab de batería |
-| Pride and Joy | Coincide con el original; referencia pública encontrada a **127 BPM** | El repo lo sigue poniendo en `~120`; no es grave, pero queda algo corto frente a la referencia | Sí: Songsterr tiene varias tabs de batería |
-| Blunders Paradise | No encontré presencia pública sólida del track ni metadata confiable | Sigue como transcripción interna no verificable externamente | No encontré tab pública confiable |
-| You Really Got Me Now | Coincide con el tema de **Jon Bon Jovi**; encontré referencias públicas a **110-111 BPM** | Cambio correcto. El repo ahora está bien encaminado en nombre, artista y BPM | No encontré una tab pública clara de batería específica para este tema exacto |
-| Arte Infernal | Coincide con el tema oficial de La Renga; referencia pública encontrada a **134 BPM** | El valor `135` está bien, pero la nota final que habla de `~95` sigue pareciendo incorrecta | No encontré tab pública de batería confiable; sí hay tabs de guitarra y acordes |
-| Born To Be Wild | Coincide con Steppenwolf; referencias públicas encontradas a **145-146 BPM** | Archivo consistente y bien calibrado | Sí: Songsterr tiene tab de batería |
-| Sobrio a las Piñas | Coincide con Divididos; referencias públicas a **116 BPM** estudio y **125 BPM** en vivo | El repo ahora es consistente a `120`, que funciona como promedio/intermedio, pero convendría aclarar si es `versión banda` | Sí: Songsterr tiene tab de batería; además apareció una transcripción textual en Cifras |
+| Alta Suciedad -> Los Chicos | `Alta suciedad` pública a **106-107 BPM** y `Los chicos` a **135 BPM** | Bien alineado y además ahora tiene tab embebida + patrón escrito | Sí: Songsterr + imagen local |
+| Blues del Ataúd | Sin presencia pública sólida encontrada | Sigue siendo una nota interna útil; groove agregado correctamente | No encontré tab pública confiable |
+| Honky Tonk Women | Correcto respecto al original y BPM razonable | Mejoró con imagen embebida, pero el groove base quedó más confuso de leer que en otros temas | Sí: Songsterr + imagen local |
+| Nadie es Perfecto | Coincide con el tema oficial; `~162` sigue razonable | Archivo sano; groove escrito claro | Sí: Songsterr en análisis previo |
+| Pride and Joy | Coincide con el original; referencia pública cercana a **127 BPM** | Tiene tab embebida, pero la imagen referenciada hoy es la equivocada | Sí: Songsterr + imagen local mal referenciada |
+| Blunders Paradise | Sin validación pública sólida | Sigue como transcripción interna; groove útil | No encontré tab pública confiable |
+| You Really Got Me Now | Coincide con Bon Jovi; **110-111 BPM** encontrado externamente | Bien encaminado en nombre, artista y groove escrito | No encontré tab pública clara específica embebida |
+| Arte Infernal | Coincide con La Renga; referencia externa cerca de **134 BPM** | Punto corregido: ya no veo contradicción fuerte de BPM | No encontré tab pública de batería confiable |
+| Born To Be Wild | Coincide con Steppenwolf; **145-146 BPM** | Muy bien resuelto; imagen y groove escrito están alineados | Sí: Songsterr + imagen local |
+| Sobrio a las Piñas | Coincide con Divididos; referencias públicas a **116 estudio / 125 vivo** | Internamente consistente a `120`, pero los tres grooves escritos están casi calcados | Sí: Songsterr + imagen local |
+
+## Hallazgos principales
+
+### 1. `Arte Infernal` quedó corregido
+
+En la revisión anterior este era el error más claro del repo. Ahora ya no lo es.
+
+- `canciones/arte-infernal.md:55` pasó a `Tempo ~135 muy importante`
+- Eso ya está alineado con el BPM del archivo y con la referencia externa
+
+Conclusión:
+
+- Este punto debe salir de la lista de errores.
+
+### 2. `Pride and Joy` tiene una referencia de imagen equivocada
+
+Este es hoy el problema más claro dentro de las nuevas tablaturas embebidas.
+
+- `canciones/pride-and-joy.md:40-41` referencia Songsterr de `Pride and Joy`
+- pero la imagen insertada es `tab-honky-tonk-women.png`
+- en la carpeta sí existe `canciones/tab-pride-and-joy.png`
+
+Conclusión:
+
+- No es un problema musical del track, pero sí un error concreto del repo.
+
+### 3. `Sobrio a las Piñas` está más prolijo, pero la sección de grooves aporta poco diferencial
+
+Ahora el archivo está mucho más consistente que antes:
+
+- `tracklist.md:18` usa `~120`
+- `canciones/sobrio-a-las-pinias.md:7` usa `120 vivo`
+- la estructura desarrolla todo a `120`
+
+Eso ya no es una contradicción.
+
+Lo que sí veo ahora:
+
+- `Groove base`, `Puente con silencios` y `Final abierto` en `canciones/sobrio-a-las-pinias.md:42-63` usan prácticamente el mismo patrón escrito
+- cambia la descripción, pero casi no cambia la tablatura
+
+Conclusión:
+
+- Conviene diferenciar más las tres secciones o dejar menos secciones pero más precisas.
+
+### 4. `Honky Tonk Women` ganó una tab embebida, pero quedó menos legible que el resto
+
+- `canciones/honky-tonk-women.md:44-50` tiene una notación más larga para caja y bombo
+- comparado con el resto del repo, esa tablatura quedó menos clara visualmente
+- además el `CB` del groove base figura vacío en la línea escrita, aunque la descripción menciona que el cowbell ayuda a sostener el feel
+
+Conclusión:
+
+- No lo marcaría como error duro, pero sí como sección mejorable.
+
+### 5. Las nuevas tablaturas embebidas mejoran mucho el repo
+
+Esto sí vale remarcarlo porque cambia la calidad general del material:
+
+- [tab-alta-suciedad-los-chicos.png](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/tab-alta-suciedad-los-chicos.png)
+- [tab-born-to-be-wild.png](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/tab-born-to-be-wild.png)
+- [tab-honky-tonk-women.png](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/tab-honky-tonk-women.png)
+- [tab-pride-and-joy.png](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/tab-pride-and-joy.png)
+- [tab-sobrio-a-las-pinias.png](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/tab-sobrio-a-las-pinias.png)
+
+Conclusión:
+
+- El repo pasó de ser solo textual a tener apoyo visual real para varios temas.
 
 ## Detalle por track
 
 ### Alta Suciedad -> Los Chicos
 
-- Lo externo sigue respaldando bien la lógica del medley:
-  - `Alta suciedad` ~106/107 BPM
-  - `Los chicos` ~135 BPM
-- A diferencia de la revisión anterior, el archivo actual ya está coherente:
-  - `canciones/alta-suciedad-los-chicos.md:7` dice `106 -> 135`
-  - `:23` mantiene `106 -> 135`
-  - `:32` dice `Transición a 135`
-  - `:40` dice `transición 106 -> 135`
+- Sigue bien resuelto.
+- La transición `106 -> 135` está consistente.
+- Ahora además tiene imagen local y groove escrito útil.
 
-Conclusión:
-
-- Este punto ya no lo marcaría como error.
-
-Tab batería:
-
-- Songsterr: [Alta suciedad Drum Tab](https://www.songsterr.com/a/wsa/andres-calamaro-alta-suciedad-drum-tab-s646139)
+No lo marcaría como problema.
 
 ### Blues del Ataúd
 
-- No encontré resultados públicos útiles que permitan validar artista, BPM o tablatura.
-- Lo trataría como material de trabajo interno de la banda.
+- Sigue sin validación pública sólida.
+- El groove agregado está bien como guía de ensayo.
 
 Recomendación:
 
-- Si existe audio propio, demo o grabación de ensayo, conviene referenciarlo dentro del repo.
+- Si existe demo o grabación privada, conviene sumarla como referencia interna.
 
 ### Honky Tonk Women
 
-- Sin cambios respecto al análisis anterior.
-- La identificación del track es correcta.
-- El BPM del repo (`~120`) sigue siendo razonable.
-
-Tabs batería:
-
-- Songsterr: [Honky Tonk Women Drum Tab](https://www.songsterr.com/a/wsa/rolling-stones-honky-tonk-women-drum-tab-s52278)
-- Songsterr alternativa: [Honky Tonk Women Drum Tab](https://www.songsterr.com/a/wsa/rolling-stones-honky-tonk-women-drum-tab-s242080)
+- El tema está bien identificado y la imagen local existe.
+- La integración visual suma.
+- El punto flojo es la lectura del groove base, que quedó menos clara que en los demás archivos.
 
 ### Nadie es Perfecto
 
-- Sigue bien identificado.
-- La referencia pública encontrada lo ubica cerca de **159 BPM**.
-- `~162` no me parece un problema real.
+- Archivo estable y consistente.
+- El groove escrito es simple y utilizable.
 
-Tab batería:
-
-- Songsterr: [Nadie es Perfecto Drum Tab](https://www.songsterr.com/a/wsa/patricio-rey-y-sus-redonditos-de-ricota-nadie-es-perfecto-drum-tab-s1331648)
+No veo errores relevantes nuevos.
 
 ### Pride and Joy
 
-- Sigue siendo válido.
-- La referencia pública encontrada lo sitúa en **127 BPM**.
-- El repo sigue usando `~120`, así que lo dejaría marcado como diferencia menor, no como error duro.
+- El archivo sigue bien como contenido musical.
+- El error concreto está en la imagen:
+  - referencia `tab-honky-tonk-women.png`
+  - debería ser `tab-pride-and-joy.png`
 
-Tabs batería:
-
-- Songsterr: [Pride And Joy Drum Tab](https://www.songsterr.com/a/wsa/stevie-ray-vaughan-double-trouble-pride-and-joy-drum-tab-s240)
-- Songsterr en vivo: [Pride and Joy (Live Alive) Drum Tab](https://www.songsterr.com/a/wsa/stevie-ray-vaughan-pride-and-joy-live-alive-drum-tab-s1039981)
+Ese es hoy uno de los ajustes más claros para hacer.
 
 ### Blunders Paradise
 
-- Igual que `Blues del Ataúd`, no encontré validación pública suficiente del tema ni tab de batería usable.
-
-Recomendación:
-
-- Mantenerlo como transcripción interna y, si existe, sumar una fuente privada o audio base.
+- Sigue siendo track no verificable externamente con lo que hay público.
+- El groove agregado funciona bien como guía.
 
 ### You Really Got Me Now
 
-- Este punto cambió por completo respecto a la revisión anterior.
-- Ahora sí encontré coincidencia externa con el tema de **Jon Bon Jovi**:
-  - referencia pública a **111 BPM**
-  - otra referencia pública a **110 BPM**
-- El repo usa `~110`, así que quedó razonablemente bien.
+- Sigue bien alineado con Bon Jovi.
+- El groove escrito está bien.
+- Todavía no tiene imagen/tab embebida como otros temas.
 
-Observación menor:
-
-- Las referencias dentro del archivo todavía usan búsquedas genéricas de `You Really Got Me`, no `You Really Got Me Now`.
-- No es un error musical, pero sí una referencia mejorable.
-
-Referencias externas:
-
-- SongBPM: [You Really Got Me Now](https://songbpm.com/%40jon-bon-jovi/you-really-got-me-now)
-- Shazam: [You Really Got Me Now](https://www.shazam.com/song/1440658020/you-really-got-me-now)
-- YouTube oficial: [You Really Got Me Now](https://www.youtube.com/watch?v=Fxhhbn9Mvs8)
+No es un error, pero sí una diferencia respecto al nivel de detalle de otros tracks.
 
 ### Arte Infernal
 
-- Sigue siendo el hallazgo más claro y vigente.
-- La referencia pública encontrada marca **134 BPM**, así que `135` está bien.
-- Pero el archivo todavía dice:
-  - `canciones/arte-infernal.md:55` `Tempo ~95 muy importante`
+- Quedó corregido.
+- BPM del archivo, estructura y nota final ahora apuntan todos a la misma zona.
 
-Conclusión:
-
-- Esta línea sigue contradiciendo tanto el resto del archivo como la referencia externa.
-- Este sí sigue siendo un error real dentro del repo.
+Ya no lo listaría como problema.
 
 ### Born To Be Wild
 
-- Sin cambios: muy bien calibrado.
-- Las referencias públicas siguen ubicándolo en **145-146 BPM**, alineado con el repo.
-
-Tab batería:
-
-- Songsterr: [Born To Be Wild Drum Tab](https://www.songsterr.com/a/wsa/steppenwolf-born-to-be-wild-drum-tab-s244)
+- De los mejores resueltos del repo hoy.
+- Tiene:
+  - BPM consistente
+  - imagen local correcta
+  - groove base y coro bien diferenciados
 
 ### Sobrio a las Piñas
 
-- El archivo ahora es internamente consistente:
-  - `tracklist.md:18` usa `~120`
-  - `canciones/sobrio-a-las-pinias.md:7` usa `120 vivo`
-  - `:20-25` desarrolla toda la estructura a `120`
-- Externamente, las mejores referencias que encontré siguen siendo:
-  - estudio: **116 BPM**
-  - vivo: **125 BPM**
+- Mucho mejor que antes desde lo editorial.
+- El punto a revisar no es el BPM interno sino la utilidad diferencial de los tres grooves escritos.
 
-Conclusión:
+Recomendación:
 
-- Ya no lo marcaría como contradicción interna.
-- Lo marcaría como una decisión de versión:
-  - `120` funciona como punto medio práctico
-  - convendría explicitar que es tempo de la versión de banda o una referencia intermedia entre estudio y vivo
-
-Observación menor:
-
-- `canciones/sobrio-a-las-pinias.md:55` dice `cómo transiciona de 120`, y la frase quedó algo rara; parece que antes hablaba de un cambio más claro.
-
-Tabs batería:
-
-- Songsterr: [Sobrio a las piñas (drums) Drum Tab](https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-drums-drum-tab-s928213)
-- Songsterr estudio: [Sobrio a las Piñas (Versión Estudio) Drum Tab](https://www.songsterr.com/a/wsa/divididos-sobrio-a-las-pinas-version-estudio-drum-tab-s1811672)
-- Transcripción textual: [CIFRAS - Sobrio A Las Piñas](https://www.cifras.com.br/cifra/divididos/sobrio-a-las-pinas)
+- Diferenciar más el `Puente con silencios` y el `Final abierto` o simplificar la sección.
 
 ## Prioridad de correcciones sugerida
 
-1. Corregir la nota final de `canciones/arte-infernal.md` para alinearla con `134/135 BPM`.
-2. Mejorar las referencias internas de `canciones/you-really-got-me-now.md` para que apunten al tema exacto y no a búsquedas genéricas.
-3. Aclarar en `canciones/sobrio-a-las-pinias.md` si `120` es el tempo adoptado por la banda.
-4. Reforzar con referencias internas o privadas los temas de `Justo Alegre`, porque siguen sin validación pública clara.
+1. Corregir en [pride-and-joy.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/pride-and-joy.md:41) la imagen `tab-honky-tonk-women.png` por `tab-pride-and-joy.png`.
+2. Mejorar la legibilidad del groove base en [honky-tonk-women.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/honky-tonk-women.md:44).
+3. Hacer que las tres secciones de grooves de [sobrio-a-las-pinias.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/sobrio-a-las-pinias.md:42) se distingan más entre sí.
+4. Si quieren mantener un criterio uniforme, agregar imagen/tab embebida también a [you-really-got-me-now.md](/Users/agustinsackmann/Repos/Personal/CableATierra/canciones/you-really-got-me-now.md:37).
+5. Reforzar con referencias privadas o internas los temas de `Justo Alegre`.
 
 ## Fuentes usadas
 

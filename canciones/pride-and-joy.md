@@ -38,7 +38,7 @@
 
 
 - https://www.songsterr.com/a/wsa/stevie-ray-vaughan-double-trouble-pride-and-joy-drum-tab-s240
-![alt text](<tab-honky-tonk-women.png>)
+![alt text](<tab-pride-and-joy.png>)
 
 
 ### Texas shuffle base
