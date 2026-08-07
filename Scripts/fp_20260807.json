@@ -1,0 +1,317 @@
+[
+  {
+    "file": "Parte_01.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9929,
+    "gap": 0.0013,
+    "confidence": "BAJA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9929
+      ],
+      [
+        "Arte Infernal",
+        0.9916
+      ],
+      [
+        "Alta Suciedad",
+        0.9882
+      ]
+    ]
+  },
+  {
+    "file": "Parte_02.mp3",
+    "song": "Los Chicos",
+    "score": 0.9658,
+    "gap": 0.0045,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Los Chicos",
+        0.9658
+      ],
+      [
+        "Cuendo estes aca2",
+        0.9612
+      ],
+      [
+        "Arte Infernal 2 BAD",
+        0.9607
+      ]
+    ]
+  },
+  {
+    "file": "Parte_05.mp3",
+    "song": "Blonders Paradise 2",
+    "score": 0.9888,
+    "gap": 0.0088,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Blonders Paradise 2",
+        0.9888
+      ],
+      [
+        "Rocking in the free world",
+        0.98
+      ],
+      [
+        "Los Chicos 2",
+        0.9797
+      ]
+    ]
+  },
+  {
+    "file": "Parte_07.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9978,
+    "gap": 0.003,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9978
+      ],
+      [
+        "Arte infernal 4",
+        0.9948
+      ],
+      [
+        "Alta Suciedad",
+        0.9876
+      ]
+    ]
+  },
+  {
+    "file": "Parte_09.mp3",
+    "song": "Blonders Paradise",
+    "score": 0.9894,
+    "gap": 0.0022,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Blonders Paradise",
+        0.9894
+      ],
+      [
+        "Los Chicos 2",
+        0.9872
+      ],
+      [
+        "Arte Infernal 3",
+        0.9862
+      ]
+    ]
+  },
+  {
+    "file": "Parte_10.mp3",
+    "song": "Alta Suciedad",
+    "score": 0.9963,
+    "gap": 0.0007,
+    "confidence": "BAJA",
+    "top3": [
+      [
+        "Alta Suciedad",
+        0.9963
+      ],
+      [
+        "Arte Infernal",
+        0.9956
+      ],
+      [
+        "Arte Infernal 3",
+        0.9894
+      ]
+    ]
+  },
+  {
+    "file": "Parte_11.mp3",
+    "song": "Blonders Paradise 2",
+    "score": 0.9888,
+    "gap": 0.0088,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Blonders Paradise 2",
+        0.9888
+      ],
+      [
+        "Rocking in the free world",
+        0.98
+      ],
+      [
+        "Los Chicos 2",
+        0.9797
+      ]
+    ]
+  },
+  {
+    "file": "Parte_13.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9963,
+    "gap": 0.0074,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9963
+      ],
+      [
+        "Arte infernal 4",
+        0.9889
+      ],
+      [
+        "Arte Infernal",
+        0.9887
+      ]
+    ]
+  },
+  {
+    "file": "Parte_14.mp3",
+    "song": "Los Chicos 2",
+    "score": 0.9969,
+    "gap": 0.0068,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Los Chicos 2",
+        0.9969
+      ],
+      [
+        "Arte Infernal 3",
+        0.9901
+      ],
+      [
+        "Arte infernal 4",
+        0.985
+      ]
+    ]
+  },
+  {
+    "file": "Parte_15.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9978,
+    "gap": 0.003,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9978
+      ],
+      [
+        "Arte infernal 4",
+        0.9948
+      ],
+      [
+        "Alta Suciedad",
+        0.9876
+      ]
+    ]
+  },
+  {
+    "file": "Parte_16.mp3",
+    "song": "Blues del ataud 2",
+    "score": 0.9659,
+    "gap": 0.0,
+    "confidence": "BAJA",
+    "top3": [
+      [
+        "Blues del ataud 2",
+        0.9659
+      ],
+      [
+        "Cuando estes aca",
+        0.9659
+      ],
+      [
+        "Arte Infernal 3",
+        0.9489
+      ]
+    ]
+  },
+  {
+    "file": "Parte_17.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9953,
+    "gap": 0.0046,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9953
+      ],
+      [
+        "Arte infernal 4",
+        0.9907
+      ],
+      [
+        "Los Chicos 2",
+        0.982
+      ]
+    ]
+  },
+  {
+    "file": "Parte_18.mp3",
+    "song": "Blonders Paradise",
+    "score": 0.9915,
+    "gap": 0.0068,
+    "confidence": "MEDIA",
+    "top3": [
+      [
+        "Blonders Paradise",
+        0.9915
+      ],
+      [
+        "Cuando estes aca",
+        0.9846
+      ],
+      [
+        "Blonders Paradise 2",
+        0.9809
+      ]
+    ]
+  },
+  {
+    "file": "Parte_19.mp3",
+    "song": "Blonders Paradise",
+    "score": 0.9838,
+    "gap": 0.0009,
+    "confidence": "BAJA",
+    "top3": [
+      [
+        "Blonders Paradise",
+        0.9838
+      ],
+      [
+        "Blues del ataud 2",
+        0.9829
+      ],
+      [
+        "Arte Infernal",
+        0.9818
+      ]
+    ]
+  },
+  {
+    "file": "Parte_20.mp3",
+    "song": "Arte Infernal 3",
+    "score": 0.9905,
+    "gap": 0.0012,
+    "confidence": "BAJA",
+    "top3": [
+      [
+        "Arte Infernal 3",
+        0.9905
+      ],
+      [
+        "Arte infernal 4",
+        0.9893
+      ],
+      [
+        "Los Chicos 2",
+        0.9874
+      ]
+    ]
+  }
+]

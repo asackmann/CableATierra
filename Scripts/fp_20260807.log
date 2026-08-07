@@ -1,0 +1,22 @@
+Cargando referencias...
+  DB: 16 canciones, 16 grabaciones en total
+  → Usando maestro de fingerprints (/Users/agustinsackmann/Repos/Personal/CableATierra/Scripts/fingerprint_db.json)
+
+Analizando partes en: /Users/agustinsackmann/Library/CloudStorage/Dropbox/04. Multimedia/Ableton/2026. Projects/CableATierra Project/20260807. Ensayo - Partes
+  ❌ Parte_01.mp3                   → Arte Infernal 3                     gap=0.0013
+  ⚠️  Parte_02.mp3                   → Los Chicos                          gap=0.0045
+  ⚠️  Parte_05.mp3                   → Blonders Paradise 2                 gap=0.0088
+  ⚠️  Parte_07.mp3                   → Arte Infernal 3                     gap=0.0030
+  ⚠️  Parte_09.mp3                   → Blonders Paradise                   gap=0.0022
+  ❌ Parte_10.mp3                   → Alta Suciedad                       gap=0.0007
+  ⚠️  Parte_11.mp3                   → Blonders Paradise 2                 gap=0.0088
+  ⚠️  Parte_13.mp3                   → Arte Infernal 3                     gap=0.0074
+  ⚠️  Parte_14.mp3                   → Los Chicos 2                        gap=0.0068
+  ⚠️  Parte_15.mp3                   → Arte Infernal 3                     gap=0.0030
+  ❌ Parte_16.mp3                   → Blues del ataud 2                   gap=0.0000
+  ⚠️  Parte_17.mp3                   → Arte Infernal 3                     gap=0.0046
+  ⚠️  Parte_18.mp3                   → Blonders Paradise                   gap=0.0068
+  ❌ Parte_19.mp3                   → Blonders Paradise                   gap=0.0009
+  ❌ Parte_20.mp3                   → Arte Infernal 3                     gap=0.0012
+
+Guardado: /Users/agustinsackmann/Repos/Personal/CableATierra/Scripts/fp_20260807.json
