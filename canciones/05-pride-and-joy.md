@@ -4,7 +4,7 @@
 
 | Campo        | Valor               |
 |--------------|---------------------|
-| **BPM**      | ~120 (shuffle)      |
+| **BPM**      |  ~120 (shuffle) (auto: 129 BPM) |
 | **Tonalidad**| Por definir         |
 | **Compás**   | 4/4                 |
 | **Duración** | ~4:00               |
@@ -86,3 +86,11 @@ BD: o o   o   o
 - 🎵 [Stevie Ray Vaughan — Pride and Joy](https://www.youtube.com/results?search_query=Stevie+Ray+Vaughan+Pride+and+Joy)
 - 🥁 [Drum playthrough Pride and Joy](https://www.youtube.com/results?search_query=Pride+and+Joy+drum+tutorial+shuffle)
 - 📝 **Transcripción:** El shuffle es todo. Escuchar al batería original (Chris Layton) — nota la energía sin acelerar. Apuntar duración exacta de solos y cómo cierra.
+
+## Letra (transcripción automática)
+
+> ⚠️ Generada por Whisper + Demucs — puede contener errores o fragmentos de charla de ensayo. Revisar y limpiar.
+
+The love angel starts to fly And my baby's longing for sunshine She's the cradle of time She's my bridal jaw She's the cradle, little baby I know they don't love me more Love my baby, strong and lean Like I was laughing at me She's the cradle of time She's my bridal jaw She's the cradle, little baby I know they don't love me more Love my baby, strong and lean Like I was laughing at me She's the cradle of time She's the bridal jaw Little baby, I know they don't love me more She's the cradle of time She's my bridal jaw Little baby, I know they don't love me more Little baby, I know they don't love me more One more time Little baby, I know they don't love me more
+
+---

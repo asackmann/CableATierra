@@ -4,7 +4,7 @@
 
 | Campo        | Valor                  |
 |--------------|------------------------|
-| **BPM**      | ~72 (shuffle)          |
+| **BPM**      |   ~72 (shuffle) (auto: 118 BPM) |
 | **Tonalidad**| Por definir            |
 | **Compás**   | 4/4                    |
 | **Duración** | ~4:30                  |
@@ -81,3 +81,11 @@ BD: o   o   o
 - 🎵 Justo Alegre — Blues del Ataúd
 - 🥁 Buscar covers locales o versiones de Justo Alegre en YouTube
 - 📝 **Transcripción:** Focalizarse en el shuffle y el swing. Grabar el tempo exacto (~72). Las dinámicas de solos son la guía del baterista.
+
+## Letra (transcripción automática)
+
+> ⚠️ Generada por Whisper + Demucs — puede contener errores o fragmentos de charla de ensayo. Revisar y limpiar.
+
+Buenísimos de... Vení a hacerte el buenito ahora Siempre las dos, siempre las dos Vuelvo a la tierra donde nací Donde toda la gente es igual a mí Vuelvo para mi hogar, pequeño y dulce hogar Pero quien me tire el mando para porfa Argentina te conozco, Argentina te quiero Saben que tenés que sos borracho y palomero Argentina te conozco, Argentina te quiero Saben que tenés que sos borracho y palomero Ya me llegará, la muerte me llegará Todo ya no llega, pero nadie se lo hace Si quieres llevarme algo al atado No tengo dudas, no me llevo mi amor Si pudieras llevarme algo al atado No tengo dudas, no me llevo mi amor Ya me llegará, la muerte me llegará Todo ya no llega, pero nadie se lo hace Si pudieras llevarme algo al atado No tengo dudas, no me llevo mi amor Si pudieras llevarme algo al atado No tengo dudas, no me llevo mi amor Si pudieras llevarme algo al atado No tengo dudas, no me llevo mi amor Si pudieras llevarme algo al atado
+
+---

@@ -45,7 +45,7 @@ BD| O - O - O O - O - O - O O - O
 
 | Campo        | Valor         |
 |--------------|---------------|
-| **BPM**      | ~135           |
+| **BPM**      |     ~135 (auto: 136 BPM) |
 | **Tonalidad**| Por definir   |
 | **Compás**   | 4/4           |
 | **Duración** | ~4:30         |
@@ -265,3 +265,11 @@ Si querés, también puedo hacerte:
 
 [1]: https://www.songsterr.com/a/wsa/la-renga-arte-infernal-tab-s41150 "Arte Infernal Tab by La Renga | Songsterr Tabs with Rhythm"
 [2]: https://acordes.lacuerda.net/renga/arte_infernal "ARTE INFERNAL: Acordes y Letra para Guitarra, Piano y Ukulele (la Renga)"
+
+## Letra (transcripción automática)
+
+> ⚠️ Generada por Whisper + Demucs — puede contener errores o fragmentos de charla de ensayo. Revisar y limpiar.
+
+No se sabe a cantar boludo. Entra conmigo, dale, no importa. Hacelo mas muteadito nada mas. Dale, dale, dale. ¿Te gusta mas? ¿En el centro? No, vos donde siempre. Que ya no hay caso Estás dispuesto a sufrir Pensiones en los traqueazos Siempre una sed No quieres dormir Si te dan energía
+
+---
