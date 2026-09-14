@@ -10,7 +10,7 @@ Formato mapping.csv:
 Uso: python3 apply_metadata.py <partes_dir> [mapping.csv]
      Si no se especifica mapping.csv, busca uno en partes_dir.
 """
-import subprocess, os, sys, csv, shutil, tempfile
+import subprocess, os, sys, csv, shutil, tempfile, re
 
 FFMPEG = "/opt/homebrew/bin/ffmpeg"
 
@@ -36,16 +36,48 @@ def apply_tag(mp3_path, title, artist="CableATierra", album=None, year="2026"):
     return False
 
 def rename_file(old_path, new_name):
-    """Renombra el archivo MP3 con el nombre de la canción."""
+    """Renombra el archivo MP3 con el nombre de la canción.
+    Idempotente: si el archivo ya viene renombrado (ej. "Parte_03. Viejo Nombre.mp3"),
+    toma solo el número/letra de parte y descarta el nombre viejo, en vez de
+    concatenarlo (evita "Parte_03. Viejo Nombre. Nuevo Nombre.mp3").
+    """
     dirn = os.path.dirname(old_path)
-    # Obtener número de parte del nombre original
-    base = os.path.basename(old_path).replace(".mp3", "")
-    num = base.split("_")[1] if "_" in base else "00"
+    base = os.path.basename(old_path)
+    m = re.match(r"Parte_([0-9]+[a-zA-Z]?)", base)
+    num = m.group(1) if m else "00"
     safe_name = new_name.replace("/", "-").replace(":", "-")
     new_fname = f"Parte_{num}. {safe_name}.mp3"
     new_path = os.path.join(dirn, new_fname)
-    os.rename(old_path, new_path)
+    if old_path != new_path:
+        os.rename(old_path, new_path)
     return new_path, new_fname
+
+def update_m3u(partes_dir, renamed):
+    """Refleja en el/los .m3u los Parte_NN que se renombraron con nombre de canción.
+    renamed: lista de (num_str, song), ej. [("01", "Alta Suciedad"), ...]
+    """
+    if not renamed:
+        return
+    m3u_files = [f for f in os.listdir(partes_dir) if f.endswith(".m3u")]
+    for m3u_name in m3u_files:
+        m3u_path = os.path.join(partes_dir, m3u_name)
+        lines = []
+        with open(m3u_path, encoding="utf-8") as f:
+            for line in f.readlines():
+                line = line.rstrip("\n")
+                for num, song in renamed:
+                    safe = song.replace("/", "-").replace(":", "-")
+                    old_file = f"Parte_{num}.mp3"
+                    new_file = f"Parte_{num}. {safe}.mp3"
+                    if line.strip() == old_file:
+                        line = new_file
+                    m = re.match(rf"(#EXTINF:\d+,)Parte {num}(\s.*)?$", line)
+                    if m:
+                        line = f"{m.group(1)}Parte {num}. {safe}"
+                lines.append(line)
+        with open(m3u_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines) + "\n")
+
 
 def apply_from_mapping(partes_dir, mapping_csv=None, artist="CableATierra",
                        year="2026", rename=True):
@@ -70,6 +102,7 @@ def apply_from_mapping(partes_dir, mapping_csv=None, artist="CableATierra",
     print(f"Aplicando metadata a {len(mapping)} partes...")
     album = os.path.basename(partes_dir)
 
+    renamed = []
     for fname in sorted(os.listdir(partes_dir)):
         if not fname.endswith(".mp3"):
             continue
@@ -87,29 +120,15 @@ def apply_from_mapping(partes_dir, mapping_csv=None, artist="CableATierra",
         if ok and rename:
             new_path, new_fname = rename_file(mp3_path, song)
             print(f"  ✓ {fname} → {new_fname}")
+            renamed.append((parte_key.split("_")[1], song))
         elif ok:
             print(f"  ✓ {fname} (tag: {song})")
         else:
             print(f"  ✗ {fname} (error al aplicar tag)")
 
-    # Actualizar M3U si existe
-    m3u_files = [f for f in os.listdir(partes_dir) if f.endswith(".m3u")]
-    if m3u_files:
-        m3u = os.path.join(partes_dir, m3u_files[0])
-        lines = []
-        for line in open(m3u).readlines():
-            # Reemplazar referencias a archivos renombrados
-            line = line.rstrip()
-            for parte, song in mapping.items():
-                num = parte.split("_")[1]
-                old = f"Parte_{num}.mp3"
-                safe = song.replace("/", "-").replace(":", "-")
-                new = f"Parte_{num}. {safe}.mp3"
-                line = line.replace(old, new)
-            lines.append(line)
-        with open(m3u, "w") as fh:
-            fh.write("\n".join(lines))
-        print(f"Playlist actualizado: {m3u_files[0]}")
+    update_m3u(partes_dir, renamed)
+    if renamed:
+        print("Playlist(s) actualizado(s).")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

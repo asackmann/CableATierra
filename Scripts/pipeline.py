@@ -9,7 +9,7 @@ Uso:
   python3 pipeline.py --lyrics-only <dir>    # solo lyrics match en carpeta ya spliteada
 """
 
-import os, sys, json, re, datetime, subprocess
+import os, sys, json, re, datetime, subprocess, shutil
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 SCRIPTS_DIR   = os.path.dirname(os.path.abspath(__file__))
@@ -20,11 +20,12 @@ LYRICS_DB     = os.path.join(SCRIPTS_DIR, "lyrics_db.json")
 with open(CONFIG_PATH) as f:
     CFG = json.load(f)
 
-PROJECT   = CFG["project_root"]
-INCOMING  = os.path.join(PROJECT, CFG["incoming_dir"])
-REFERENCE = os.path.join(PROJECT, CFG["reference_dir"])
-ARTIST    = CFG["artist"]
-YEAR      = CFG["year"]
+PROJECT    = CFG["project_root"]
+INCOMING   = CFG["incoming_root"]
+ARCHIVE    = os.path.join(INCOMING, CFG.get("incoming_processed_dir", "Procesados"))
+REFERENCE  = os.path.join(PROJECT, CFG["reference_dir"])
+ARTIST     = CFG["artist"]
+YEAR       = CFG["year"]
 FFPROBE   = CFG.get("ffprobe", "/opt/homebrew/bin/ffprobe")
 
 PARTE_RE = re.compile(r'^Parte_\d+\.mp3$', re.IGNORECASE)
@@ -237,13 +238,14 @@ def write_mapping_csv(out_dir, results):
 
 
 def auto_apply_ok(out_dir, results):
-    from apply_metadata import apply_tag, rename_file
+    from apply_metadata import apply_tag, rename_file, update_m3u
     album = os.path.basename(out_dir)
     auto_confs = {"OK", "DOBLE_OK", "LYRICS_OK"}
     ok_matches = [r for r in results if r["confidence"] in auto_confs]
     if not ok_matches:
         return
     log(f"  → Aplicando metadata a {len(ok_matches)} partes con confianza alta...")
+    renamed = []
     for r in ok_matches:
         mp3 = os.path.join(out_dir, r["file"])
         if not os.path.exists(mp3):
@@ -251,6 +253,9 @@ def auto_apply_ok(out_dir, results):
         if apply_tag(mp3, r["song"], ARTIST, album, YEAR):
             _, new_fname = rename_file(mp3, r["song"])
             log(f"    ✓ {r['file']} → {new_fname}")
+            num = r["file"].replace(".mp3", "").split("_")[1]
+            renamed.append((num, r["song"]))
+    update_m3u(out_dir, renamed)
 
 
 # ── Procesamiento principal ────────────────────────────────────────────────────
@@ -310,8 +315,21 @@ def process_file(fname, force=False):
     else:
         log(f"  → Sin referencia en {REFERENCE}, saltando fingerprint")
 
+    # 5. Archivar el original: sacarlo de la carpeta de entrada para que
+    #    quede claro qué está pendiente vs qué ya se procesó.
+    os.makedirs(ARCHIVE, exist_ok=True)
+    archived_path = os.path.join(ARCHIVE, fname)
+    if os.path.exists(archived_path):
+        base, ext = os.path.splitext(archived_path)
+        i = 1
+        while os.path.exists(archived_path):
+            archived_path = f"{base} (dup{i}){ext}"
+            i += 1
+    shutil.move(fpath, archived_path)
+    log(f"  → Original archivado en {archived_path}")
+
     log(f"Listo: {fname}")
-    return out_dir
+    return out_dir, archived_path
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -361,10 +379,11 @@ def main():
     log(f"Archivos nuevos: {files_to_process}")
     for fname in files_to_process:
         try:
-            out_dir = process_file(fname)
+            out_dir, archived_path = process_file(fname)
             processed[fname] = {
                 "date": datetime.datetime.now().isoformat(),
-                "output_dir": out_dir
+                "output_dir": out_dir,
+                "archived_original": archived_path
             }
             save_processed(processed)
         except Exception as e:

@@ -1,6 +1,7 @@
 {
   "project_root": "/Users/agustinsackmann/Library/CloudStorage/Dropbox/04. Multimedia/Ableton/2026. Projects/CableATierra Project",
-  "incoming_dir": "Samples/Imported",
+  "incoming_root": "/Users/agustinsackmann/Library/CloudStorage/Dropbox/04. Multimedia/Musica/Jamming-Ensayos/2026. Cable a Tierra",
+  "incoming_processed_dir": "Procesados",
   "reference_dir": "20260609. Ensayo - Partes",
   "processed_log": "/Users/agustinsackmann/Repos/Personal/CableATierra/Scripts/processed.json",
   "artist": "CableATierra",
